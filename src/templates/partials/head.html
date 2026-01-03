@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{title}} | My Cybersecurity Notes</title>
+<meta name="description" content="{{description}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Added Rajdhani for a technical/cyberpunk feel, removing Inter to keep to 3 fonts max if needed, but keeping Inter for body. 
+     Fonts: 
+     1. Rajdhani (Headings/UI) - Tech feel
+     2. Inter (Body) - Readable
+     3. JetBrains Mono (Code) - Nerd 
+-->
+<link
+    href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;700&family=Rajdhani:wght@500;600;700&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="{{root_path}}/css/style.css">
+<script>
+    window.SITE_ROOT = "{{root_path}}";
+    (function () {
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+</script>

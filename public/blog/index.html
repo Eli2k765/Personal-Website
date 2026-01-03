@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog | My Cybersecurity Notes</title>
+<meta name="description" content="Blog - Eli2k">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Added Rajdhani for a technical/cyberpunk feel, removing Inter to keep to 3 fonts max if needed, but keeping Inter for body. 
+     Fonts: 
+     1. Rajdhani (Headings/UI) - Tech feel
+     2. Inter (Body) - Readable
+     3. JetBrains Mono (Code) - Nerd 
+-->
+<link
+    href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;700&family=Rajdhani:wght@500;600;700&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<script>
+    window.SITE_ROOT = "..";
+    (function () {
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+</script>
+</head>
+
+<body>
+    <div class="app-layout">
+        <aside class="sidebar-left">
+    <div class="site-branding">
+        <div class="brand-row">
+            <a href="../index.html" class="logo-link">
+                <h1 class="logo">Eli2k</h1>
+            </a>
+        </div>
+        <p class="subtitle">Cybersecurity Notes & Tools</p>
+
+        <!-- Reward Badge -->
+        <div id="elite-badge" class="hidden-badge" title="You found all 10 Flags!">
+            <span class="badge-icon">🏆</span>
+            <span class="badge-text">ELITE HACKER</span>
+        </div>
+    </div>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="../notes/red-team/index.html">Red Team</a></li>
+            <li><a href="../notes/blue-team/index.html">Blue Team</a></li>
+            <li><a href="../blog/index.html">Blog</a></li>
+            <li><a href="../tools/index.html">Tools</a></li>
+            <li><a href="https://github.com" target="_blank">GitHub</a></li>
+            <li><a href="../about.html">Resume</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="sidebar-footer">
+        <button id="theme-toggle" aria-label="Toggle Theme" title="Toggle Theme">
+            <span class="icon">☀</span>
+        </button>
+
+        <div class="neko-widget-left">
+            <script>NekoType = "robot"</script>
+            <h3 id=nl>
+                <script src="../js/neko.js"></script>
+            </h3>
+        </div>
+
+        <!-- Hidden Flags (Moved from Footer) -->
+        <div style="display:none;">
+            <!-- Flag 6 -->
+            <p>ZnJlaWdodHRyYWlu</p>
+            <p>ZmxhZ3tiYXNlNjRfaXNfbm90X2VuY3J5cHRpb259</p>
+            <!-- Flag 10 -->
+            <a href="#" title="flag{h1dd3n_href_hunt3r}">.</a>
+        </div>
+    </div>
+</aside>
+
+        <main class="main-content index-layout">
+            <header class="page-header">
+                <!-- flag{v1ew_s0urc3_m4st3r} -->
+                <button id="sidebar-toggle" class="mobile-only" aria-label="Toggle Tree">☰</button>
+                <div class="breadcrumbs"><a href="../index.html">root</a> / <a href="../blog/index.html">Blog</a></div>
+                <h1>Blog</h1>
+                <div class="page-meta">
+                    <span class="last-modified">Last Modified: January 2, 2026</span>
+                </div>
+            </header>
+
+            <div class="intro-content">
+                <h1>CTF Writeups &amp; Articles</h1>
+<p>Here you&#39;ll find my cybersecurity insights, writeups, and research.</p>
+
+                <div class="section-list"><h3>Section Contents</h3><ul class="content-grid">
+            <li class="content-item">
+                <a href="../blog/articles/index.html">
+                    <span class="content-icon">📁</span>
+                    <span class="content-title">Articles</span>
+                </a>
+                
+            </li>
+            <li class="content-item">
+                <a href="../blog/writeups/index.html">
+                    <span class="content-icon">📁</span>
+                    <span class="content-title">Writeups</span>
+                </a>
+                
+            </li></ul></div>
+            </div>
+
+            <!-- Tree is now in Right Sidebar -->
+        </main>
+
+        <aside class="sidebar-right">
+    <div class="widget globe-widget">
+        <div class="cyber-globe">
+            <div class="globe-ring"></div>
+            <div class="globe-ring"></div>
+            <div class="globe-ring"></div>
+            <div class="globe-core"></div>
+        </div>
+    </div>
+
+    <div class="widget search-widget">
+        <h3>Search</h3>
+        <input type="text" id="search-input" placeholder="> EXECUTE SEARCH..." aria-label="Search">
+        <div id="search-results" class="search-dropdown"></div>
+    </div>
+
+    <div class="widget tree-widget">
+        <h3>System Explorer</h3>
+        <div class="tree-container">
+            <ul class="tree-list">
+                <li class="tree-item folder">
+                    <details open>
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../blog/index.html" class="folder-link">Blog</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../blog/articles/index.html" class="folder-link">Articles</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../blog/articles/business/index.html" class="folder-link">Business</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../blog/articles/business/tech-debt-liability.html">
+                        <span class="tree-icon">📄</span> Tech Debt as Intergenerational Theft
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/articles/business/roi-of-security.html">
+                        <span class="tree-icon">📄</span> The ROI of Security: The Price of Civilization
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/articles/business/saas-moat-fallacy.html">
+                        <span class="tree-icon">📄</span> The SaaS Moat Fallacy: Digital Feudalism
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../blog/articles/philosophy/index.html" class="folder-link">Philosophy</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../blog/articles/philosophy/code-is-law.html">
+                        <span class="tree-icon">📄</span> Code is Law: The Death of Nuance
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/articles/philosophy/asymmetry-of-cyber-war.html">
+                        <span class="tree-icon">📄</span> The Asymmetry of Cyber War: The Red Queen's Race
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/articles/philosophy/panopticon-of-data.html">
+                        <span class="tree-icon">📄</span> The Panopticon of Data: The Narcissism of Surveillance
+                    </a>
+                </li></ul>
+                    </details>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../blog/writeups/index.html" class="folder-link">Writeups</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../blog/writeups/ctf-platforms/index.html" class="folder-link">CTF Platforms</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../blog/writeups/ctf-platforms/hack-the-box/index.html" class="folder-link">Hack The Box</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../blog/writeups/ctf-platforms/hack-the-box/binary/index.html" class="folder-link">Binary</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/hack-the-box/binary/brainstorm.html">
+                        <span class="tree-icon">📄</span> HTB: Brainstorm
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/hack-the-box/binary/overflow.html">
+                        <span class="tree-icon">📄</span> HTB: Overflow
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../blog/writeups/ctf-platforms/hack-the-box/cloud/index.html" class="folder-link">Cloud</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/hack-the-box/cloud/blacksky.html">
+                        <span class="tree-icon">📄</span> HTB: BlackSky
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/hack-the-box/cloud/bucket.html">
+                        <span class="tree-icon">📄</span> HTB: Bucket
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/hack-the-box/cloud/sink.html">
+                        <span class="tree-icon">📄</span> HTB: Sink
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/hack-the-box/cloud/stacked.html">
+                        <span class="tree-icon">📄</span> HTB: Stacked
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../blog/writeups/ctf-platforms/hack-the-box/linux/index.html" class="folder-link">Linux</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/hack-the-box/linux/bashed.html">
+                        <span class="tree-icon">📄</span> HTB: Bashed
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/hack-the-box/linux/beep.html">
+                        <span class="tree-icon">📄</span> HTB: Beep
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/hack-the-box/linux/cap.html">
+                        <span class="tree-icon">📄</span> HTB: Cap
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/hack-the-box/linux/lame.html">
+                        <span class="tree-icon">📄</span> HTB: Lame
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/hack-the-box/linux/nibbles.html">
+                        <span class="tree-icon">📄</span> HTB: Nibbles
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/hack-the-box/linux/shocker.html">
+                        <span class="tree-icon">📄</span> HTB: Shocker
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../blog/writeups/ctf-platforms/hack-the-box/pro-labs/index.html" class="folder-link">Pro labs</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/hack-the-box/pro-labs/dante.html">
+                        <span class="tree-icon">📄</span> HTB: Dante
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/hack-the-box/pro-labs/zephyr.html">
+                        <span class="tree-icon">📄</span> HTB: Zephyr
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../blog/writeups/ctf-platforms/hack-the-box/windows/index.html" class="folder-link">Windows</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/hack-the-box/windows/active.html">
+                        <span class="tree-icon">📄</span> HTB: Active
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/hack-the-box/windows/administrator.html">
+                        <span class="tree-icon">📄</span> HTB: Administrator
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/hack-the-box/windows/bastion.html">
+                        <span class="tree-icon">📄</span> HTB: Bastion
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/hack-the-box/windows/boardlight.html">
+                        <span class="tree-icon">📄</span> HTB: BoardLight
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/hack-the-box/windows/certified.html">
+                        <span class="tree-icon">📄</span> HTB: Certified
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/hack-the-box/windows/cicada.html">
+                        <span class="tree-icon">📄</span> HTB: Cicada
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/hack-the-box/windows/devel.html">
+                        <span class="tree-icon">📄</span> HTB: Devel
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/hack-the-box/windows/forest.html">
+                        <span class="tree-icon">📄</span> HTB: Forest
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/hack-the-box/windows/netmon.html">
+                        <span class="tree-icon">📄</span> HTB: Netmon
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/hack-the-box/windows/sauna.html">
+                        <span class="tree-icon">📄</span> HTB: Sauna
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/hack-the-box/windows/tombwatcher.html">
+                        <span class="tree-icon">📄</span> HTB: TombWatcher
+                    </a>
+                </li></ul>
+                    </details>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../blog/writeups/ctf-platforms/lets-defend/index.html" class="folder-link">LetsDefend</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../blog/writeups/ctf-platforms/lets-defend/ir-dfir/index.html" class="folder-link">Ir dfir</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/lets-defend/ir-dfir/cloud-forensics.html">
+                        <span class="tree-icon">📄</span> LetsDefend: Cloud Forensics
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/lets-defend/ir-dfir/dynamic-malware-analysis.html">
+                        <span class="tree-icon">📄</span> LetsDefend: Dynamic Malware Analysis
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/lets-defend/ir-dfir/linux-forensics.html">
+                        <span class="tree-icon">📄</span> LetsDefend: Linux Forensics
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/lets-defend/ir-dfir/ntfs-forensics.html">
+                        <span class="tree-icon">📄</span> LetsDefend: NTFS Forensics
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/lets-defend/ir-dfir/registry-hive-challenge.html">
+                        <span class="tree-icon">📄</span> LetsDefend: RegistryHive Challenge
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../blog/writeups/ctf-platforms/lets-defend/soc-operations/index.html" class="folder-link">Soc operations</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/lets-defend/soc-operations/event-id-88.html">
+                        <span class="tree-icon">📄</span> LetsDefend: Event ID 88 - Phishing URL
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/lets-defend/soc-operations/investigate-web-attack.html">
+                        <span class="tree-icon">📄</span> LetsDefend: Investigate Web Attack
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/lets-defend/soc-operations/phishing-email-analysis.html">
+                        <span class="tree-icon">📄</span> LetsDefend: Phishing Email Analysis
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../blog/writeups/ctf-platforms/lets-defend/threat-hunting/index.html" class="folder-link">Threat hunting</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/lets-defend/threat-hunting/splunking-endpoint.html">
+                        <span class="tree-icon">📄</span> LetsDefend: Splunking the Endpoint
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../blog/writeups/ctf-platforms/lets-defend/threat-hunting/sysmon-hunting.html">
+                        <span class="tree-icon">📄</span> LetsDefend: Threat Hunting with Sysmon
+                    </a>
+                </li></ul>
+                    </details>
+                </li></ul>
+                    </details>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../blog/writeups/vulnerability-research/index.html" class="folder-link">Vulnerability Research</a>
+                        </summary>
+                        
+                    </details>
+                </li></ul>
+                    </details>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../tools/index.html" class="folder-link">Cybersecurity Tools</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../tools/blue/index.html" class="folder-link">Blue Team Tools</a>
+                        </summary>
+                        
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../tools/red/index.html" class="folder-link">Red Team Tools</a>
+                        </summary>
+                        
+                    </details>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../notes/index.html" class="folder-link">Notes</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../notes/blue-team/index.html" class="folder-link">Blue team</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../notes/blue-team/detection-engineering/index.html" class="folder-link">Detection Engineering</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../notes/blue-team/detection-engineering/modern-data-pipeline.html">
+                        <span class="tree-icon">📄</span> Modern Data Pipeline & Strategy
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/blue-team/detection-engineering/siem-log-analysis.html">
+                        <span class="tree-icon">📄</span> SIEM & Log Analysis
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/blue-team/detection-engineering/threat-hunting.html">
+                        <span class="tree-icon">📄</span> Threat Hunting
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/blue-team/detection-engineering/writing-detection-rules.html">
+                        <span class="tree-icon">📄</span> Writing Detection Rules (Sigma/YARA)
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../notes/blue-team/governance-risk-compliance/index.html" class="folder-link">Governance, Risk, and Compliance (GRC)</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../notes/blue-team/governance-risk-compliance/risk-management-frameworks.html">
+                        <span class="tree-icon">📄</span> Risk Management Frameworks
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../notes/blue-team/incident-response/index.html" class="folder-link">Incident Response</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../notes/blue-team/incident-response/ai-driven-operations.html">
+                        <span class="tree-icon">📄</span> AI-Driven Operations & Triage
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/blue-team/incident-response/digital-forensics.html">
+                        <span class="tree-icon">📄</span> Digital Forensics
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/blue-team/incident-response/ir-lifecycle.html">
+                        <span class="tree-icon">📄</span> Incident Response Lifecycle
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/blue-team/incident-response/malware-analysis.html">
+                        <span class="tree-icon">📄</span> Malware Analysis
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/blue-team/incident-response/unified-response.html">
+                        <span class="tree-icon">📄</span> Unified Response Framework (OCSF)
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../notes/blue-team/security-architecture/index.html" class="folder-link">Security Architecture</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../notes/blue-team/security-architecture/endpoint-hardening.html">
+                        <span class="tree-icon">📄</span> Endpoint Hardening
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/blue-team/security-architecture/iam.html">
+                        <span class="tree-icon">📄</span> Identity & Access Management
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/blue-team/security-architecture/network-security.html">
+                        <span class="tree-icon">📄</span> Network Security
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../notes/blue-team/threat-intelligence/index.html" class="folder-link">Threat Intelligence</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../notes/blue-team/threat-intelligence/cti-fundamentals.html">
+                        <span class="tree-icon">📄</span> CTI Fundamentals
+                    </a>
+                </li></ul>
+                    </details>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../notes/red-team/index.html" class="folder-link">Red Team Notes</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../notes/red-team/11-collection/index.html" class="folder-link">Collection</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../notes/red-team/11-collection/archive-collected-data.html">
+                        <span class="tree-icon">📄</span> Archive Collected Data
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/11-collection/input-capture.html">
+                        <span class="tree-icon">📄</span> Input Capture
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/11-collection/screen-capture.html">
+                        <span class="tree-icon">📄</span> Screen Capture
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../notes/red-team/12-command-and-control/index.html" class="folder-link">Command and Control</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../notes/red-team/12-command-and-control/encrypted-channel.html">
+                        <span class="tree-icon">📄</span> Encrypted Channel
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/12-command-and-control/ingress-tool-transfer.html">
+                        <span class="tree-icon">📄</span> Ingress Tool Transfer
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/12-command-and-control/web-service.html">
+                        <span class="tree-icon">📄</span> Web Service
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../notes/red-team/08-credential-access/index.html" class="folder-link">Credential Access</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../notes/red-team/08-credential-access/credentials-from-password-stores.html">
+                        <span class="tree-icon">📄</span> Credentials from Password Stores
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/08-credential-access/forced-authentication.html">
+                        <span class="tree-icon">📄</span> Forced Authentication
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/08-credential-access/kerberos-attacks.html">
+                        <span class="tree-icon">📄</span> Kerberos Attacks
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/08-credential-access/os-credential-dumping.html">
+                        <span class="tree-icon">📄</span> OS Credential Dumping
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/08-credential-access/unsecured-credentials.html">
+                        <span class="tree-icon">📄</span> Unsecured Credentials
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../notes/red-team/07-defense-evasion/index.html" class="folder-link">Defense Evasion</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../notes/red-team/07-defense-evasion/impair-defenses.html">
+                        <span class="tree-icon">📄</span> Impair Defenses
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/07-defense-evasion/indicator-removal.html">
+                        <span class="tree-icon">📄</span> Indicator Removal
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/07-defense-evasion/masquerading.html">
+                        <span class="tree-icon">📄</span> Masquerading
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/07-defense-evasion/obfuscated-files-information.html">
+                        <span class="tree-icon">📄</span> Obfuscated Files or Information
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/07-defense-evasion/process-injection.html">
+                        <span class="tree-icon">📄</span> Process Injection
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../notes/red-team/09-discovery/index.html" class="folder-link">Discovery</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../notes/red-team/09-discovery/account-discovery.html">
+                        <span class="tree-icon">📄</span> Account Discovery
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/09-discovery/cloud-infrastructure-discovery.html">
+                        <span class="tree-icon">📄</span> Cloud Infrastructure Discovery
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/09-discovery/software-discovery.html">
+                        <span class="tree-icon">📄</span> Software Discovery
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/09-discovery/system-network-configuration-discovery.html">
+                        <span class="tree-icon">📄</span> System Network Configuration Discovery
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../notes/red-team/04-execution/index.html" class="folder-link">Execution</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../notes/red-team/04-execution/command-and-scripting-interpreter.html">
+                        <span class="tree-icon">📄</span> Command and Scripting Interpreter
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/04-execution/container-cloud-execution.html">
+                        <span class="tree-icon">📄</span> Container and Cloud Execution
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/04-execution/inter-process-communication.html">
+                        <span class="tree-icon">📄</span> Inter-Process Communication
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/04-execution/user-execution.html">
+                        <span class="tree-icon">📄</span> User Execution
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../notes/red-team/13-exfiltration/index.html" class="folder-link">Exfiltration</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../notes/red-team/13-exfiltration/exfiltration-over-c2.html">
+                        <span class="tree-icon">📄</span> Exfiltration Over C2 Channel
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/13-exfiltration/exfiltration-over-web-service.html">
+                        <span class="tree-icon">📄</span> Exfiltration Over Web Service
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../notes/red-team/14-impact/index.html" class="folder-link">Impact</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../notes/red-team/14-impact/data-encrypted-for-impact.html">
+                        <span class="tree-icon">📄</span> Data Encrypted for Impact
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/14-impact/service-stop.html">
+                        <span class="tree-icon">📄</span> Service Stop and Inhibit Recovery
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../notes/red-team/03-initial-access/index.html" class="folder-link">Initial Access</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../notes/red-team/03-initial-access/exploit-public-facing-application.html">
+                        <span class="tree-icon">📄</span> Exploit Public-Facing Application
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/03-initial-access/phishing.html">
+                        <span class="tree-icon">📄</span> Phishing Operations
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/03-initial-access/supply-chain-compromise.html">
+                        <span class="tree-icon">📄</span> Supply Chain Compromise
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/03-initial-access/valid-accounts.html">
+                        <span class="tree-icon">📄</span> Valid Accounts
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../notes/red-team/10-lateral-movement/index.html" class="folder-link">Lateral Movement</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../notes/red-team/10-lateral-movement/lateral-tool-transfer.html">
+                        <span class="tree-icon">📄</span> Lateral Tool Transfer
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/10-lateral-movement/remote-services.html">
+                        <span class="tree-icon">📄</span> Remote Services
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/10-lateral-movement/taint-shared-content.html">
+                        <span class="tree-icon">📄</span> Taint Shared Content
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/10-lateral-movement/use-alternate-authentication-material.html">
+                        <span class="tree-icon">📄</span> Use Alternate Authentication Material
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../notes/red-team/05-persistence/index.html" class="folder-link">Persistence</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../notes/red-team/05-persistence/bits-jobs.html">
+                        <span class="tree-icon">📄</span> BITS Jobs
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/05-persistence/boot-logon-autostart-execution.html">
+                        <span class="tree-icon">📄</span> Boot or Logon Autostart Execution
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/05-persistence/browser-extensions.html">
+                        <span class="tree-icon">📄</span> Browser Extensions
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/05-persistence/create-account.html">
+                        <span class="tree-icon">📄</span> Create Account
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/05-persistence/registry-run-keys.html">
+                        <span class="tree-icon">📄</span> Registry Run Keys / Startup Folder
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/05-persistence/scheduled-task-job.html">
+                        <span class="tree-icon">📄</span> Scheduled Task/Job
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../notes/red-team/06-privilege-escalation/index.html" class="folder-link">Privilege Escalation</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../notes/red-team/06-privilege-escalation/abuse-elevation-control.html">
+                        <span class="tree-icon">📄</span> Abuse Elevation Control Mechanism
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/06-privilege-escalation/access-token-manipulation.html">
+                        <span class="tree-icon">📄</span> Access Token Manipulation
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/06-privilege-escalation/escape-to-host.html">
+                        <span class="tree-icon">📄</span> Escape to Host
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/06-privilege-escalation/hijack-execution-flow.html">
+                        <span class="tree-icon">📄</span> Hijack Execution Flow
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../notes/red-team/01-reconnaissance/index.html" class="folder-link">Reconnaissance</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../notes/red-team/01-reconnaissance/active-scanning.html">
+                        <span class="tree-icon">📄</span> Active Scanning
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/01-reconnaissance/gather-victim-host-information.html">
+                        <span class="tree-icon">📄</span> Gather Victim Host Information
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/01-reconnaissance/gather-victim-identity-info.html">
+                        <span class="tree-icon">📄</span> Gather Victim Identity Information
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/01-reconnaissance/gather-victim-network-info.html">
+                        <span class="tree-icon">📄</span> Gather Victim Network Information
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/01-reconnaissance/gather-victim-org-information.html">
+                        <span class="tree-icon">📄</span> Gather Victim Org Information
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/01-reconnaissance/phishing-for-information.html">
+                        <span class="tree-icon">📄</span> Phishing for Information
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/01-reconnaissance/search-closed-sources.html">
+                        <span class="tree-icon">📄</span> Search Closed Sources
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/01-reconnaissance/search-open-technical-databases.html">
+                        <span class="tree-icon">📄</span> Search Open Technical Databases
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/01-reconnaissance/search-open-websites-domains.html">
+                        <span class="tree-icon">📄</span> Search Open Websites/Domains
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/01-reconnaissance/wordlist-scanning.html">
+                        <span class="tree-icon">📄</span> Wordlist Scanning
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../notes/red-team/02-resource-development/index.html" class="folder-link">Resource Development</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../notes/red-team/02-resource-development/compromise-accounts.html">
+                        <span class="tree-icon">📄</span> Compromise Accounts
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/02-resource-development/compromise-infrastructure.html">
+                        <span class="tree-icon">📄</span> Compromise Infrastructure
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/02-resource-development/develop-capabilities.html">
+                        <span class="tree-icon">📄</span> Develop Capabilities
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/02-resource-development/establish-accounts.html">
+                        <span class="tree-icon">📄</span> Establish Accounts
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/02-resource-development/infrastructure.html">
+                        <span class="tree-icon">📄</span> Infrastructure Setup
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/02-resource-development/obtain-capabilities.html">
+                        <span class="tree-icon">📄</span> Obtain Capabilities
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../notes/red-team/02-resource-development/stage-capabilities.html">
+                        <span class="tree-icon">📄</span> Stage Capabilities
+                    </a>
+                </li></ul>
+                    </details>
+                </li></ul>
+                    </details>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item file">
+                    <a href="../about.html">
+                        <span class="tree-icon">📄</span> About Me & Resume
+                    </a>
+                </li></ul>
+        </div>
+    </div>
+</aside>
+    </div>
+
+    <!-- Visual Footer Removed -->
+<footer style="display: none;"></footer>
+
+<!-- Easter Egg: BSOD -->
+<div id="bsod" class="hidden">
+    <div class="bsod-content">
+        <h1>:(</h1>
+        <p>Your PC ran into a problem and needs to restart. We're just collecting some error info, and then we'll
+            restart for you.</p>
+        <p>0% complete</p>
+        <div class="bsod-details">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/QR_code_for_mobile_English_Wikipedia.svg"
+                alt="QR Code" class="bsod-qr">
+            <div class="bsod-text">
+                <p>For more information about this issue and possible fixes, visit https://www.windows.com/stopcode</p>
+                <p>If you call a support person, give them this info:</p>
+                <p>Stop code: CRITICAL_PROCESS_DIED</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/search_data.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/ctf.js"></script>
+</body>
+
+</html>
