@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{head}}
+</head>
+
+<body>
+    <div class="app-layout">
+        {{sidebar_left}}
+
+        <main class="main-content index-layout">
+            <header class="page-header">
+                <!-- flag{v1ew_s0urc3_m4st3r} -->
+                <button id="sidebar-toggle" class="mobile-only" aria-label="Toggle Tree">☰</button>
+                <div class="breadcrumbs">{{breadcrumbs}}</div>
+                <h1>{{title}}</h1>
+                <div class="page-meta">
+                    <span class="last-modified">Last Modified: {{date}}</span>
+                </div>
+            </header>
+
+            <div class="intro-content">
+                {{content}}
+                {{children_list}}
+            </div>
+
+            <!-- Tree is now in Right Sidebar -->
+        </main>
+
+        {{sidebar_right}}
+    </div>
+
+    {{footer}}
+</body>
+
+</html>

@@ -1,0 +1,971 @@
+:root {
+    /* EggByte Earthy Palette */
+    /* Cats: Princess (White), Ciri (Grey), Geo (Orange) */
+
+    --bg-color: #FAF7F0;
+    /* Princess (Soft White) */
+    --sidebar-bg: #F4F1EA;
+    /* Slightly darker beige */
+    --card-bg: #FFFFFF;
+
+    --text-color: #4A403A;
+    /* Soft Brown/Grey (Ciriish) */
+    --subtext-color: #8C8681;
+
+    --heading-color: #606C38;
+    /* Nature Green */
+
+    --link-color: #D98C5F;
+    /* Terracotta/Orange (Geo) */
+    --link-hover: #E09F3E;
+    /* Bright Orange */
+
+    --border-color: #DCD7C9;
+    --code-bg: #EAE5D9;
+
+    /* Accents */
+    --accent-green: #606C38;
+    --accent-orange: #BC6C25;
+    --accent-cream: #FEFAE0;
+
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-body: 'Outfit', sans-serif;
+    --font-heading: 'Nunito', sans-serif;
+    /* Rounder, friendlier */
+}
+
+[data-theme="dark"] {
+    /* Evening Mode (Cozy Dark) */
+    --bg-color: #2C2C2C;
+    --sidebar-bg: #252525;
+    --card-bg: #333333;
+    --text-color: #E0E0E0;
+    --heading-color: #A3B18A;
+    --link-color: #D98C5F;
+    --border-color: #444444;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: var(--link-hover);
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+.logo,
+.main-nav a,
+summary {
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+/* 3-Column Grid */
+.app-layout {
+    display: grid;
+    grid-template-columns: 260px 1fr 320px;
+    /* Wider right sidebar for tree */
+    grid-template-areas: "sidebar-left main sidebar-right";
+    min-height: 100vh;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+/* sidebar-left */
+.sidebar-left {
+    grid-area: sidebar-left;
+    background: var(--sidebar-bg);
+    border-right: 1px solid var(--border-color);
+    padding: 2.5rem 1.5rem;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+}
+
+/* ... logo / nav ... */
+
+/* Sidebar Footer (Bottom) */
+.sidebar-footer {
+    margin-top: auto;
+    /* Pushes to bottom */
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* Left Sidebar Neko */
+.neko-widget-left {
+    text-align: center;
+    /* Cleaned up margins */
+}
+
+/* flag{css_1nsp3ct0r_g4dg3t} */
+
+/* Reward Badge */
+#elite-badge {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ffd700;
+    color: #ffd700;
+    text-align: center;
+    border-radius: 4px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    animation: pulse-gold 2s infinite;
+    cursor: help;
+}
+
+.hidden-badge {
+    display: none;
+}
+
+.visible-badge {
+    display: block;
+    animation: pop-in 0.5s ease-out, pulse-gold 2s infinite;
+}
+
+@keyframes pulse-gold {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    }
+
+    100% {
+        box-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
+    }
+}
+
+@keyframes pop-in {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    80% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Confetti */
+.confetti {
+    position: fixed;
+    top: -10px;
+    width: 10px;
+    height: 10px;
+    background-color: #f00;
+    z-index: 9999;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(720deg);
+    }
+}
+
+.logo {
+    font-size: 2.8rem;
+    color: var(--ctp-pink);
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+
+.logo:hover {
+    color: var(--ctp-green);
+    text-shadow: 2px 2px 0px #F9E2AF, -1px -1px 0 #A6E3A1;
+    transform: scale(1.05) rotate(-2deg);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Removed Glitch Keyframes */
+
+.search-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--card-bg);
+    /* Use card background, not base */
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.search-item {
+    display: block;
+    padding: 0.8rem;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+.search-item:hover {
+    background: var(--sidebar-bg);
+}
+
+.main-nav ul {
+    list-style: none;
+    padding-top: 1rem;
+}
+
+.main-nav li {
+    margin-bottom: 0.5rem;
+}
+
+.main-nav a {
+    display: block;
+    padding: 0.8rem 1rem;
+    font-size: 1.1rem;
+    border-left: 2px solid transparent;
+}
+
+.main-nav a:hover {
+    background: var(--ctp-surface0);
+    border-left-color: var(--ctp-pink);
+    padding-left: 1.5rem;
+    color: var(--ctp-pink);
+}
+
+/* Main Content */
+.main-content {
+    grid-area: main;
+    padding: 5rem 6rem;
+    /* Increased padding / cleaner spacing */
+    background: var(--bg-color);
+    max-width: 1400px;
+    /* Prevent being too wide */
+    margin: 0 auto;
+    width: 100%;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin: 1.5rem 0;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.breadcrumbs {
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    color: var(--ctp-subtext0);
+}
+
+.breadcrumbs a {
+    color: var(--ctp-overlay1);
+}
+
+.breadcrumbs a:hover {
+    color: var(--ctp-pink);
+}
+
+/* Sidebar Right */
+.sidebar-right {
+    grid-area: sidebar-right;
+    background: var(--sidebar-bg);
+    border-left: 1px solid var(--border-color);
+    padding: 2rem;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    /* Scrollable for long trees */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.top-controls {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#theme-toggle {
+    background: transparent;
+    border: 2px solid var(--ctp-yellow);
+    color: var(--ctp-yellow);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+#theme-toggle:hover {
+    background: var(--ctp-yellow);
+    color: var(--ctp-base);
+}
+
+/* Retro Search */
+.search-widget {
+    position: relative;
+    /* Anchor for dropdown */
+}
+
+.search-widget input {
+    width: 100%;
+    background: #000;
+    border: 2px solid var(--ctp-green);
+    color: var(--ctp-green);
+    font-family: var(--font-mono);
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 0;
+}
+
+.search-widget input::placeholder {
+    color: rgba(166, 227, 161, 0.5);
+}
+
+.search-widget h3 {
+    color: var(--ctp-green);
+    border-color: var(--ctp-green);
+}
+
+/* Tree Widget in Sidebar */
+.tree-widget h3 {
+    color: var(--ctp-mauve);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.tree-list {
+    list-style: none;
+    padding-left: 0.5rem;
+    border-left: 1px solid var(--ctp-surface1);
+    margin-left: 0.5rem;
+}
+
+.tree-item {
+    margin: 0.4rem 0;
+    font-size: 0.95rem;
+}
+
+/* Tree Arrows & Styling */
+/* Tree Arrows & Styling */
+summary {
+    cursor: pointer;
+    position: relative;
+    padding-left: 1.2rem;
+    color: var(--ctp-text);
+    transition: color 0.2s;
+    list-style: none;
+    /* Hide default arrow Standard */
+}
+
+summary:hover {
+    color: var(--ctp-blue);
+}
+
+summary::marker,
+summary::-webkit-details-marker {
+    display: none !important;
+    content: "";
+    /* Hide default Force */
+}
+
+/* Custom Arrow on Left */
+summary::before {
+    content: "►";
+    font-size: 0.7rem;
+    color: var(--ctp-overlay1);
+    position: absolute;
+    left: 0;
+    top: 2px;
+    transition: transform 0.2s;
+}
+
+details[open]>summary::before {
+    transform: rotate(90deg);
+    color: var(--ctp-pink);
+}
+
+details[open]>summary {
+    color: var(--ctp-pink);
+}
+
+.folder-link {
+    margin-left: 0.3rem;
+    color: inherit;
+}
+
+.tree-item.file a {
+    padding-left: 1.5rem;
+    display: block;
+    color: var(--ctp-subtext0);
+}
+
+.tree-item.file a:hover,
+.active-file {
+    color: var(--ctp-green) !important;
+    background: var(--ctp-surface0);
+}
+
+
+
+/* Content Separation */
+.main-content h2 {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dashed var(--ctp-overlay0);
+    color: var(--ctp-mauve);
+}
+
+.main-content p {
+    margin-bottom: 1.2rem;
+}
+
+.main-content ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.main-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* Mobile Toggle */
+.mobile-only {
+    display: none;
+}
+
+#sidebar-toggle {
+    background: transparent;
+    border: 1px solid var(--ctp-overlay0);
+    color: var(--ctp-pink);
+    font-size: 1.5rem;
+    padding: 0.2rem 0.8rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    float: left;
+    /* Align left of breadcrumbs */
+}
+
+#sidebar-toggle:hover {
+    background: var(--ctp-surface0);
+}
+
+/* Section List (Index Page Content) */
+.section-list {
+    margin-top: 2rem;
+    border-top: 1px dashed var(--ctp-overlay0);
+    padding-top: 1rem;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    list-style: none;
+    padding-left: 0 !important;
+    /* Override default */
+}
+
+.content-item {
+    background: var(--ctp-surface0);
+    border: 1px solid var(--ctp-surface1);
+    padding: 1rem;
+    border-radius: 4px;
+    transition: transform 0.2s, rotate 0.2s;
+}
+
+.content-item:hover {
+    transform: translateY(-2px);
+    border-color: var(--ctp-pink);
+}
+
+.content-item a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: bold;
+}
+
+.content-icon {
+    font-size: 1.2rem;
+}
+
+.content-item p {
+    font-size: 0.85rem;
+    color: var(--ctp-subtext0);
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .app-layout {
+        /* Keep 2 columns: Nav | Main. Right Sidebar hidden behind toggle */
+        grid-template-columns: 240px 1fr;
+        grid-template-areas: "sidebar-left main";
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .sidebar-right {
+        position: fixed;
+        top: 0;
+        right: -320px;
+        /* Hide off-screen */
+        width: 300px;
+        height: 100vh;
+        z-index: 1000;
+        transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        border-left: 1px solid var(--ctp-pink);
+        box-shadow: -10px 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .sidebar-right.active {
+        right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .app-layout {
+        grid-template-columns: 1fr;
+        grid-template-areas: "sidebar-left" "main";
+    }
+
+    .sidebar-left {
+        height: auto;
+        position: static;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+        padding: 1rem;
+    }
+
+    /* Make Left Sidebar compact on mobile or keep as is? User didn't complain about left. */
+    .sidebar-left nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .sidebar-left ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding-top: 0;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .neko-widget-left {
+        margin-top: 1rem;
+        border: none;
+    }
+
+    .main-content {
+        padding: 2rem 1rem;
+    }
+}
+
+/* --- Branding --- */
+.logo {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    color: var(--heading-color);
+    letter-spacing: 1px;
+    text-transform: none;
+    /* Soften it */
+}
+
+/* Theme Toggle */
+.theme-controls {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#theme-toggle {
+    background: transparent;
+    border: 2px solid var(--accent-green);
+    color: var(--accent-green);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#theme-toggle:hover {
+    background: var(--accent-green);
+    color: var(--bg-color);
+}
+
+/* Globe - Removed */
+.globe-widget {
+    display: none;
+}
+
+/* Search Widget Styling (Override Cyber) */
+.search-widget input {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    border-radius: 4px;
+}
+
+.search-widget input::placeholder {
+    color: var(--subtext-color);
+}
+
+.search-widget h3 {
+    color: var(--heading-color);
+    border-color: var(--border-color);
+}
+
+text-decoration: none;
+border: none !important;
+}
+
+.logo-link:hover .logo {
+    text-shadow: 0 0 15px rgba(245, 194, 231, 0.6);
+}
+
+/* Re-style toggle for new position - Clean & Glowing */
+#theme-toggle {
+    margin: 0;
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+    background: transparent;
+    border: none !important;
+    /* No circle */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ctp-text);
+}
+
+#theme-toggle:hover {
+    color: var(--ctp-yellow);
+    background: transparent;
+    transform: rotate(15deg) scale(1.1);
+    filter: drop-shadow(0 0 5px var(--ctp-yellow));
+    /* Glow effect */
+}
+
+/* Cleanup old theme-controls if valid */
+.theme-controls {
+    display: none;
+}
+
+/* Tree Highlight for Current Page */
+.active-file {
+    color: var(--ctp-green) !important;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(166, 227, 161, 0.4);
+    position: relative;
+    padding-left: 0.5rem;
+}
+
+.active-file::before {
+    content: '►';
+    position: absolute;
+    left: -0.8rem;
+    color: var(--ctp-pink);
+    font-size: 0.8rem;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+}
+
+/* Easter Egg: Barrel Roll */
+.barrel-roll {
+    animation: roll 1s ease-in-out;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Easter Egg: Hacker Mode (Matrix) */
+.hackermode {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+/* Easter Egg: BSOD */
+#bsod {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0078d7;
+    /* Windows Blue */
+    color: white;
+    z-index: 9999;
+    display: none;
+    /* Hidden by default */
+    align-items: center;
+    padding: 10%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* OS font */
+    cursor: none;
+    /* Hide cursor for realism */
+}
+
+#bsod.visible {
+    display: flex;
+}
+
+.bsod-content h1 {
+    font-size: 8rem;
+    margin-bottom: 2rem;
+    font-weight: normal;
+}
+
+.bsod-content p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.bsod-details {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+.bsod-qr {
+    width: 100px;
+    height: 100px;
+    background: white;
+    /* Fallback */
+}
+
+.bsod-text {
+    font-size: 1rem;
+}
+
+.hackermode {
+    filter: invert(1) hue-rotate(180deg);
+    /* Simple cheap matrix effect */
+}
+
+.hackermode::before {
+    content: "SYSTEM COMPROMISED";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    color: red;
+    z-index: 9999;
+    font-family: 'Audiowide', cursive;
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+/* --- Round 8 Updates --- */
+
+/* Distinguishable Tags */
+.tags-container {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+.tag {
+    background-color: var(--ctp-surface0);
+    color: var(--ctp-blue);
+    padding: 2px 10px;
+    border-radius: 15px;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    border: 1px solid var(--ctp-surface1);
+    transition: all 0.2s ease;
+    text-transform: lowercase;
+}
+
+.tag:hover {
+    background-color: var(--ctp-surface1);
+    color: var(--ctp-pink);
+    border-color: var(--ctp-pink);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Round 14 Updates (Refined) --- */
+
+/* 1. Sprouting 'e' */
+.sprouting-e {
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.sprouting-e::after {
+    content: '🌿';
+    /* Herb for more leafiness */
+    position: absolute;
+    top: 5px;
+    /* Start deeper inside */
+    right: -8px;
+    /* Start further right */
+    font-size: 0px;
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: rotate(-20deg);
+}
+
+.logo:hover .sprouting-e::after,
+.sprouting-e:hover::after {
+    font-size: 14px;
+    /* Small size */
+    opacity: 1;
+    top: -2px;
+    /* Lower (Down) */
+    right: -13px;
+    /* Further out (Right) */
+    transform: rotate(10deg);
+}
+
+.logo:hover .sprouting-e {
+    color: var(--ctp-green);
+}
+
+/* 2. Fried Egg Easter Egg */
+.egg-easter-egg {
+    position: relative;
+    display: inline-block;
+    cursor: grab;
+}
+
+.egg-raw,
+.egg-fried {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.egg-fried {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: scale(0.5) rotate(180deg);
+}
+
+.egg-easter-egg:hover .egg-raw {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.egg-easter-egg:hover .egg-fried {
+    opacity: 1;
+    transform: scale(1.2) rotate(0deg);
+}
+
+/* Updated Logo - Clean, No Shake */
+.logo:hover {
+    color: var(--ctp-green);
+    text-shadow: none;
+    /* Removed shadow/glow */
+    transform: scale(1.05);
+    /* Just grow */
+    transition: all 0.3s ease;
+}
+
+/* Enhanced Dividers for Visibility */
+.main-content h2 {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid var(--border-color);
+    /* Stronger line */
+    color: var(--heading-color);
+}
+
+.main-content h3 {
+    margin-top: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dashed var(--border-color);
+    color: var(--text-color);
+}

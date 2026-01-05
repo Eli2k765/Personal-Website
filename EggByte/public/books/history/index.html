@@ -1,0 +1,3708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>History | EggByte</title>
+<meta name="description" content="History - EggByte">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- EggByte Fonts: Outfit (Body), Nunito (Heading), JetBrains (Code) -->
+<link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Nunito:wght@600;700&family=JetBrains+Mono:wght@400&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="../../css/style.css">
+<script>
+    window.SITE_ROOT = "../..";
+    (function () {
+        // Default to 'light' (Earthy) for EggByte
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+</script>
+</head>
+
+<body>
+    <div class="app-layout">
+        <aside class="sidebar-left">
+    <div class="site-branding">
+        <!-- Neko Cats (Moved below) -->
+        <div class="brand-row">
+            <a href="../../index.html" class="logo-link">
+                <!-- Brought closer to top (margin-top: 10px) -->
+                <h1 class="logo" style="margin-top: 10px;">EggByt<span class="sprouting-e">e</span></h1>
+            </a>
+        </div>
+        <p class="subtitle">Life, Cats, & Cozy Things</p>
+
+        <!-- Divider in left column -->
+        <hr style="border: 0; border-bottom: 2px dashed var(--border-color); margin: 1.5rem 1rem 1rem 0; opacity: 0.6;">
+    </div>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="../../books/index.html">Books</a></li>
+            <li><a href="../../movies/index.html">Movies & TV</a></li>
+            <li><a href="../../recipes/index.html">Recipes</a></li>
+            <li><a href="../../stories/index.html">Stories</a></li>
+            <li><a href="../../clothes/index.html">Clothes</a></li>
+            <li><a href="../../about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Neko Cats (Moved to middle) -->
+    <div class="neko-roost" style="position:absolute; top:0; left:20px; z-index:9999; pointer-events:none;">
+        <script>
+            // Prevent default single-cat auto-start
+            window.NekoNoDefault = true;
+        </script>
+        <script src="https://webneko.net/n20171213.js"></script>
+        <script>
+            window.addEventListener('load', function () {
+                try {
+                    // Positioned relative to screen/sidebar top-left
+                    // Y=380 to sit between Nav and Footer
+                    new Neko(40, 380, false, "silversky");
+                    new Neko(90, 380, false, "lucy");
+                    new Neko(140, 380, false, "socks");
+                } catch (e) {
+                    console.warn("Neko spawn failed:", e);
+                }
+            });
+        </script>
+    </div>
+
+    <div class="sidebar-footer">
+        <button id="theme-toggle" aria-label="Toggle Theme" title="Toggle Theme">
+            <span class="icon">☀</span>
+        </button>
+
+        <!-- Neko Widget (maybe change image here later via JS, but same script works) -->
+        <!-- Neko Cats moved to middle -->
+    </div>
+</aside>
+
+        <main class="main-content index-layout">
+            <header class="page-header">
+                <!-- flag{v1ew_s0urc3_m4st3r} -->
+                <button id="sidebar-toggle" class="mobile-only" aria-label="Toggle Tree">☰</button>
+                <div class="breadcrumbs"><a href="../../index.html">root</a> / <a href="../../books/index.html">Books</a> / <a href="../../books/history/index.html">History</a></div>
+                <h1>History</h1>
+                <div class="page-meta">
+                    <span class="last-modified">Last Modified: January 5, 2026</span>
+                </div>
+            </header>
+
+            <div class="intro-content">
+                <!-- H1 handled by template -->
+
+                <div class="section-list"><h3>Section Contents</h3><ul class="content-grid">
+            <li class="content-item">
+                <a href="../../books/history/1491.html">
+                    <span class="content-icon">📄</span>
+                    <span class="content-title">1491</span>
+                </a>
+                <p>Overview of 1491 by Charles C. Mann.</p>
+            </li>
+            <li class="content-item">
+                <a href="../../books/history/a-century-of-spies.html">
+                    <span class="content-icon">📄</span>
+                    <span class="content-title">A Century of Spies</span>
+                </a>
+                <p>Overview of A Century of Spies by Jeffrey T. Richelson.</p>
+            </li>
+            <li class="content-item">
+                <a href="../../books/history/a-peoples-history-of-the-united-states.html">
+                    <span class="content-icon">📄</span>
+                    <span class="content-title">A People's History of the United States</span>
+                </a>
+                <p>Overview of A People's History of the United States by Howard Zinn.</p>
+            </li>
+            <li class="content-item">
+                <a href="../../books/history/a-peoples-history-of-the-world.html">
+                    <span class="content-icon">📄</span>
+                    <span class="content-title">A People's History of the World</span>
+                </a>
+                <p>Overview of A People's History of the World by Chris Harman.</p>
+            </li>
+            <li class="content-item">
+                <a href="../../books/history/at-home.html">
+                    <span class="content-icon">📄</span>
+                    <span class="content-title">At Home</span>
+                </a>
+                <p>Overview of At Home by Bill Bryson.</p>
+            </li>
+            <li class="content-item">
+                <a href="../../books/history/bombs-beards-and-barricades.html">
+                    <span class="content-icon">📄</span>
+                    <span class="content-title">Bombs Beards and Barricades</span>
+                </a>
+                <p>Overview of Bombs Beards and Barricades by Anthony Esler.</p>
+            </li>
+            <li class="content-item">
+                <a href="../../books/history/bury-my-heart-at-wounded-knee.html">
+                    <span class="content-icon">📄</span>
+                    <span class="content-title">Bury My Heart at Wounded Knee</span>
+                </a>
+                <p>Overview of Bury My Heart at Wounded Knee by Dee Brown.</p>
+            </li>
+            <li class="content-item">
+                <a href="../../books/history/che-guevara-and-the-fbi.html">
+                    <span class="content-icon">📄</span>
+                    <span class="content-title">Che Guevara and the FBI</span>
+                </a>
+                <p>Overview of Che Guevara and the FBI by Michael Ratner.</p>
+            </li>
+            <li class="content-item">
+                <a href="../../books/history/common-sense.html">
+                    <span class="content-icon">📄</span>
+                    <span class="content-title">Common Sense</span>
+                </a>
+                <p>Overview of Common Sense by Thomas Paine.</p>
+            </li>
+            <li class="content-item">
+                <a href="../../books/history/guns-germs-and-steel.html">
+                    <span class="content-icon">📄</span>
+                    <span class="content-title">Guns Germs and Steel</span>
+                </a>
+                <p>Overview of Guns Germs and Steel by Jared Diamond.</p>
+            </li>
+            <li class="content-item">
+                <a href="../../books/history/herodotus-thucydides.html">
+                    <span class="content-icon">📄</span>
+                    <span class="content-title">Herodotus | Thucydides</span>
+                </a>
+                <p>Overview of Herodotus | Thucydides by Herodotus/Thucydides.</p>
+            </li>
+            <li class="content-item">
+                <a href="../../books/history/homo-deus.html">
+                    <span class="content-icon">📄</span>
+                    <span class="content-title">Homo Deus</span>
+                </a>
+                <p>Overview of Homo Deus by Yuval Noah Harari.</p>
+            </li>
+            <li class="content-item">
+                <a href="../../books/history/lies-my-teacher-told-me.html">
+                    <span class="content-icon">📄</span>
+                    <span class="content-title">Lies My Teacher Told Me</span>
+                </a>
+                <p>Overview of Lies My Teacher Told Me by James W. Loewen.</p>
+            </li>
+            <li class="content-item">
+                <a href="../../books/history/nexus-a-brief-history.html">
+                    <span class="content-icon">📄</span>
+                    <span class="content-title">Nexus: A Brief History</span>
+                </a>
+                <p>Overview of Nexus: A Brief History by Yuval Noah Harari.</p>
+            </li>
+            <li class="content-item">
+                <a href="../../books/history/sapiens.html">
+                    <span class="content-icon">📄</span>
+                    <span class="content-title">Sapiens</span>
+                </a>
+                <p>Overview of Sapiens by Yuval Noah Harari.</p>
+            </li>
+            <li class="content-item">
+                <a href="../../books/history/the-autumn-of-the-middle-ages.html">
+                    <span class="content-icon">📄</span>
+                    <span class="content-title">The Autumn of the Middle Ages</span>
+                </a>
+                <p>Overview of The Autumn of the Middle Ages by Johan Huizinga.</p>
+            </li></ul></div>
+            </div>
+
+            <!-- Tree is now in Right Sidebar -->
+        </main>
+
+        <aside class="sidebar-right">
+    <!-- Globe Removed -->
+
+    <div class="widget search-widget">
+        <h3>Search</h3>
+        <input type="text" id="search-input" placeholder="Search..." aria-label="Search">
+        <div id="search-results" class="search-dropdown"></div>
+    </div>
+
+    <div class="widget tree-widget">
+        <h3>System Explorer</h3>
+        <div class="tree-container">
+            <ul class="tree-list">
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../blog/index.html" class="folder-link">Blog</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../blog/articles/index.html" class="folder-link">Articles</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../blog/articles/business/index.html" class="folder-link">Business</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../blog/articles/business/roi-of-security.html">
+                        <span class="tree-icon">📄</span> The ROI of Security: The Price of Civilization
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../blog/articles/business/saas-moat-fallacy.html">
+                        <span class="tree-icon">📄</span> The SaaS Moat Fallacy: Digital Feudalism
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../blog/articles/business/tech-debt-liability.html">
+                        <span class="tree-icon">📄</span> Tech Debt as Intergenerational Theft
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../blog/articles/philosophy/index.html" class="folder-link">Philosophy</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../blog/articles/philosophy/asymmetry-of-cyber-war.html">
+                        <span class="tree-icon">📄</span> The Asymmetry of Cyber War: The Red Queen's Race
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../blog/articles/philosophy/code-is-law.html">
+                        <span class="tree-icon">📄</span> Code is Law: The Death of Nuance
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../blog/articles/philosophy/panopticon-of-data.html">
+                        <span class="tree-icon">📄</span> The Panopticon of Data: The Narcissism of Surveillance
+                    </a>
+                </li></ul>
+                    </details>
+                </li></ul>
+                    </details>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details open>
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/index.html" class="folder-link">Books</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/aesthetic/index.html" class="folder-link">Aesthetic</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/aesthetic/piranesi.html">
+                        <span class="tree-icon">📄</span> Piranesi
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/aesthetic/the-wind-in-the-willows.html">
+                        <span class="tree-icon">📄</span> The Wind in the Willows
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/aesthetic/winnie-the-pooh.html">
+                        <span class="tree-icon">📄</span> Winnie-the-Pooh
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/anthropology/index.html" class="folder-link">Anthropology</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/anthropology/bullshit-jobs.html">
+                        <span class="tree-icon">📄</span> Bullshit Jobs
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/anthropology/debt-the-first-5000-years.html">
+                        <span class="tree-icon">📄</span> Debt: The First 5000 Years
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/anthropology/structural-anthropology.html">
+                        <span class="tree-icon">📄</span> Structural Anthropology
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/anthropology/the-golden-bough.html">
+                        <span class="tree-icon">📄</span> The Golden Bough
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/art/index.html" class="folder-link">Art</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/art/basic-history-of-art.html">
+                        <span class="tree-icon">📄</span> Basic History of Art
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/bio/index.html" class="folder-link">Bio</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/bio/autobiography-of-malcolm-x.html">
+                        <span class="tree-icon">📄</span> Autobiography of Malcolm X
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/bio/lakota-woman.html">
+                        <span class="tree-icon">📄</span> Lakota Woman
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/bio/the-radium-woman.html">
+                        <span class="tree-icon">📄</span> The Radium Woman
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/classic/index.html" class="folder-link">Classic</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/classic/1984.html">
+                        <span class="tree-icon">📄</span> 1984
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/a-christmas-carol.html">
+                        <span class="tree-icon">📄</span> A Christmas Carol
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/a-clockwork-orange.html">
+                        <span class="tree-icon">📄</span> A Clockwork Orange
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/a-dolls-house.html">
+                        <span class="tree-icon">📄</span> A Doll's House
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/a-farewell-to-arms.html">
+                        <span class="tree-icon">📄</span> A Farewell to Arms
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/a-lost-lady.html">
+                        <span class="tree-icon">📄</span> A Lost Lady
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/a-nursery-tale.html">
+                        <span class="tree-icon">📄</span> A Nursery Tale
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/a-streetcar-named-desire.html">
+                        <span class="tree-icon">📄</span> A Streetcar Named Desire
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/a-tale-of-two-cities.html">
+                        <span class="tree-icon">📄</span> A Tale of Two Cities
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/absalom-absalom.html">
+                        <span class="tree-icon">📄</span> Absalom Absalom!
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/adventures-of-cipollino.html">
+                        <span class="tree-icon">📄</span> Adventures of Cipollino
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/aeschylus-sophocles-euripides.html">
+                        <span class="tree-icon">📄</span> Aeschylus | Sophocles | Euripides
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/alices-adventures-in-wonderland.html">
+                        <span class="tree-icon">📄</span> Alice's Adventures in Wonderland
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/all-quiet-on-the-western-front.html">
+                        <span class="tree-icon">📄</span> All Quiet on the Western Front
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/animal-farm.html">
+                        <span class="tree-icon">📄</span> Animal Farm
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/anna-karenina.html">
+                        <span class="tree-icon">📄</span> Anna Karenina
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/as-i-lay-dying.html">
+                        <span class="tree-icon">📄</span> As I Lay Dying
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/bartleby-the-scrivener.html">
+                        <span class="tree-icon">📄</span> Bartleby the Scrivener
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/beloved.html">
+                        <span class="tree-icon">📄</span> Beloved
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/beowulf.html">
+                        <span class="tree-icon">📄</span> Beowulf
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/berlin-alexanderplatz.html">
+                        <span class="tree-icon">📄</span> Berlin Alexanderplatz
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/brave-new-world.html">
+                        <span class="tree-icon">📄</span> Brave New World
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/breakfast-at-tiffanys.html">
+                        <span class="tree-icon">📄</span> Breakfast at Tiffany's
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/candide.html">
+                        <span class="tree-icon">📄</span> Candide
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/canterbury-tales.html">
+                        <span class="tree-icon">📄</span> Canterbury Tales
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/carmilla.html">
+                        <span class="tree-icon">📄</span> Carmilla
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/catch-22.html">
+                        <span class="tree-icon">📄</span> Catch-22
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/catcher-in-the-rye.html">
+                        <span class="tree-icon">📄</span> Catcher in the Rye
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/cats-cradle.html">
+                        <span class="tree-icon">📄</span> Cat's Cradle
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/charlie-and-the-chocolate-factory.html">
+                        <span class="tree-icon">📄</span> Charlie and the Chocolate Factory
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/children-of-the-alley.html">
+                        <span class="tree-icon">📄</span> Children of the Alley
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/collected-tales-of-edgar-allan-poe.html">
+                        <span class="tree-icon">📄</span> Collected Tales of Edgar Allan Poe
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/complete-fairy-tales.html">
+                        <span class="tree-icon">📄</span> Complete Fairy Tales
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/crime-and-punishment.html">
+                        <span class="tree-icon">📄</span> Crime and Punishment
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/dead-souls.html">
+                        <span class="tree-icon">📄</span> Dead Souls
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/death-in-venice.html">
+                        <span class="tree-icon">📄</span> Death in Venice
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/death-of-a-salesman.html">
+                        <span class="tree-icon">📄</span> Death of a Salesman
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/decameron.html">
+                        <span class="tree-icon">📄</span> Decameron
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/demons.html">
+                        <span class="tree-icon">📄</span> Demons
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/diary-of-a-madman.html">
+                        <span class="tree-icon">📄</span> Diary of a Madman
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/die-nibelungen-sage.html">
+                        <span class="tree-icon">📄</span> Die Nibelungen Sage
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/doctor-zhivago.html">
+                        <span class="tree-icon">📄</span> Doctor Zhivago
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/don-quixote.html">
+                        <span class="tree-icon">📄</span> Don Quixote
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/dracula.html">
+                        <span class="tree-icon">📄</span> Dracula
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/dream-of-the-red-chamber.html">
+                        <span class="tree-icon">📄</span> Dream of the Red Chamber
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/dubliners.html">
+                        <span class="tree-icon">📄</span> Dubliners
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/east-of-eden.html">
+                        <span class="tree-icon">📄</span> East of Eden
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/fahrenheit-451.html">
+                        <span class="tree-icon">📄</span> Fahrenheit 451
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/fantastic-mr-fox.html">
+                        <span class="tree-icon">📄</span> Fantastic Mr. Fox
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/faust.html">
+                        <span class="tree-icon">📄</span> Faust
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/first-love.html">
+                        <span class="tree-icon">📄</span> First Love
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/frankenstein.html">
+                        <span class="tree-icon">📄</span> Frankenstein
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/from-the-mixed-up-files-of-mrs-basil-e.html">
+                        <span class="tree-icon">📄</span> From the Mixed-Up Files of Mrs. Basil E.
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/gargantua-and-pantagruel.html">
+                        <span class="tree-icon">📄</span> Gargantua and Pantagruel
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/goethes-faust.html">
+                        <span class="tree-icon">📄</span> Goethe's Faust
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/gone-with-the-wind.html">
+                        <span class="tree-icon">📄</span> Gone with the Wind
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/grande-serto-veredas.html">
+                        <span class="tree-icon">📄</span> Grande Sertão: Veredas
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/great-expectations.html">
+                        <span class="tree-icon">📄</span> Great Expectations
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/green-eggs-and-ham.html">
+                        <span class="tree-icon">📄</span> Green Eggs and Ham
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/grimms-fairy-tales.html">
+                        <span class="tree-icon">📄</span> Grimm's Fairy Tales
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/gullivers-travels.html">
+                        <span class="tree-icon">📄</span> Gulliver's Travels
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/hamlet.html">
+                        <span class="tree-icon">📄</span> Hamlet
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/hans-brinker.html">
+                        <span class="tree-icon">📄</span> Hans Brinker
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/hans-christian-andersens-fairy-tales.html">
+                        <span class="tree-icon">📄</span> Hans Christian Andersen's Fairy Tales
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/heart-of-darkness.html">
+                        <span class="tree-icon">📄</span> Heart of Darkness
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/heidi.html">
+                        <span class="tree-icon">📄</span> Heidi
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/history.html">
+                        <span class="tree-icon">📄</span> History
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/how-do-you-live.html">
+                        <span class="tree-icon">📄</span> How Do You Live?
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/hunger.html">
+                        <span class="tree-icon">📄</span> Hunger
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/in-a-glass-darkly.html">
+                        <span class="tree-icon">📄</span> In a Glass Darkly
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/invisible-man.html">
+                        <span class="tree-icon">📄</span> Invisible Man
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/island-of-dr-moreau.html">
+                        <span class="tree-icon">📄</span> Island of Dr. Moreau
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/ivan-the-fool.html">
+                        <span class="tree-icon">📄</span> Ivan the Fool
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/ivanhoe.html">
+                        <span class="tree-icon">📄</span> Ivanhoe
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/jacques-the-fatalist.html">
+                        <span class="tree-icon">📄</span> Jacques the Fatalist
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/james-and-the-giant-peach.html">
+                        <span class="tree-icon">📄</span> James and the Giant Peach
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/jane-eyre.html">
+                        <span class="tree-icon">📄</span> Jane Eyre
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/jin-ping-mei.html">
+                        <span class="tree-icon">📄</span> Jin Ping Mei
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/journey-to-the-end-of-the-night.html">
+                        <span class="tree-icon">📄</span> Journey to the End of the Night
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/journey-to-the-west-vol-1-4.html">
+                        <span class="tree-icon">📄</span> Journey to the West (Vol 1-4)
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/julius-caesar.html">
+                        <span class="tree-icon">📄</span> Julius Caesar
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/justine.html">
+                        <span class="tree-icon">📄</span> Justine
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/king-lear.html">
+                        <span class="tree-icon">📄</span> King Lear
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/korean-childrens-favorite-stories.html">
+                        <span class="tree-icon">📄</span> Korean Children's Favorite Stories
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/last-of-the-mohicans.html">
+                        <span class="tree-icon">📄</span> Last of the Mohicans
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/les-misrables.html">
+                        <span class="tree-icon">📄</span> Les Misérables
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/little-lord-fauntleroy.html">
+                        <span class="tree-icon">📄</span> Little Lord Fauntleroy
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/little-women.html">
+                        <span class="tree-icon">📄</span> Little Women
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/lolita.html">
+                        <span class="tree-icon">📄</span> Lolita
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/long-days-journey-into-night.html">
+                        <span class="tree-icon">📄</span> Long Day's Journey Into Night
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/lord-of-the-flies.html">
+                        <span class="tree-icon">📄</span> Lord of the Flies
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/love-in-the-time-of-cholera.html">
+                        <span class="tree-icon">📄</span> Love in the Time of Cholera
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/macbeth.html">
+                        <span class="tree-icon">📄</span> Macbeth
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/madame-bovary.html">
+                        <span class="tree-icon">📄</span> Madame Bovary
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/mahabharata.html">
+                        <span class="tree-icon">📄</span> Mahabharata
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/matilda.html">
+                        <span class="tree-icon">📄</span> Matilda
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/medea.html">
+                        <span class="tree-icon">📄</span> Medea
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/memoirs-of-hadrian.html">
+                        <span class="tree-icon">📄</span> Memoirs of Hadrian
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/metamorphoses.html">
+                        <span class="tree-icon">📄</span> Metamorphoses
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/metamorphosis.html">
+                        <span class="tree-icon">📄</span> Metamorphosis
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/middlemarch.html">
+                        <span class="tree-icon">📄</span> Middlemarch
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/midnights-children.html">
+                        <span class="tree-icon">📄</span> Midnight's Children
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/midsummer-nights-dream.html">
+                        <span class="tree-icon">📄</span> Midsummer Night's Dream
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/miraculous-stories-from-japan.html">
+                        <span class="tree-icon">📄</span> Miraculous Stories from Japan
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/moby-dick.html">
+                        <span class="tree-icon">📄</span> Moby-Dick
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/molloy-malone-dies-unnamable.html">
+                        <span class="tree-icon">📄</span> Molloy / Malone Dies / Unnamable
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/mourning-becomes-electra.html">
+                        <span class="tree-icon">📄</span> Mourning Becomes Electra
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/mrs-dalloway.html">
+                        <span class="tree-icon">📄</span> Mrs. Dalloway
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/naked-lunch.html">
+                        <span class="tree-icon">📄</span> Naked Lunch
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/native-son.html">
+                        <span class="tree-icon">📄</span> Native Son
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/nine-fairy-tales.html">
+                        <span class="tree-icon">📄</span> Nine Fairy Tales
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/njals-saga.html">
+                        <span class="tree-icon">📄</span> Njal's Saga
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/nostromo.html">
+                        <span class="tree-icon">📄</span> Nostromo
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/notes-from-underground.html">
+                        <span class="tree-icon">📄</span> Notes from Underground
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/oedipus-rex.html">
+                        <span class="tree-icon">📄</span> Oedipus Rex
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/of-mice-and-men.html">
+                        <span class="tree-icon">📄</span> Of Mice and Men
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/old-man-and-the-sea.html">
+                        <span class="tree-icon">📄</span> Old Man and the Sea
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/oliver-twist.html">
+                        <span class="tree-icon">📄</span> Oliver Twist
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/on-the-road.html">
+                        <span class="tree-icon">📄</span> On the Road
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/one-flew-over-the-cuckoos-nest.html">
+                        <span class="tree-icon">📄</span> One Flew Over the Cuckoo's Nest
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/othello.html">
+                        <span class="tree-icon">📄</span> Othello
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/paradise-lost.html">
+                        <span class="tree-icon">📄</span> Paradise Lost
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/pere-goriot.html">
+                        <span class="tree-icon">📄</span> Pere Goriot
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/persuasion.html">
+                        <span class="tree-icon">📄</span> Persuasion
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/peter-pan.html">
+                        <span class="tree-icon">📄</span> Peter Pan
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/picture-of-dorian-gray.html">
+                        <span class="tree-icon">📄</span> Picture of Dorian Gray
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/pippi-longstocking.html">
+                        <span class="tree-icon">📄</span> Pippi Longstocking
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/portrait-of-the-artist-as-a-young-man.html">
+                        <span class="tree-icon">📄</span> Portrait of the Artist as a Young Man
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/pride-and-prejudice.html">
+                        <span class="tree-icon">📄</span> Pride and Prejudice
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/ramayana.html">
+                        <span class="tree-icon">📄</span> Ramayana
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/rebecca.html">
+                        <span class="tree-icon">📄</span> Rebecca
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/robinson-crusoe.html">
+                        <span class="tree-icon">📄</span> Robinson Crusoe
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/romance-of-the-three-kingdoms.html">
+                        <span class="tree-icon">📄</span> Romance of the Three Kingdoms
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/romeo-and-juliet.html">
+                        <span class="tree-icon">📄</span> Romeo and Juliet
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/saint-joan.html">
+                        <span class="tree-icon">📄</span> Saint Joan
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/season-of-migration-to-the-north.html">
+                        <span class="tree-icon">📄</span> Season of Migration to the North
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/selected-stories-of-anton-chekhov.html">
+                        <span class="tree-icon">📄</span> Selected Stories of Anton Chekhov
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/sense-and-sensibility.html">
+                        <span class="tree-icon">📄</span> Sense and Sensibility
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/sentimental-education.html">
+                        <span class="tree-icon">📄</span> Sentimental Education
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/siddhartha.html">
+                        <span class="tree-icon">📄</span> Siddhartha
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/six-characters-in-search-of-an-author.html">
+                        <span class="tree-icon">📄</span> Six Characters in Search of an Author
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/slaughterhouse-five.html">
+                        <span class="tree-icon">📄</span> Slaughterhouse-Five
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/sons-and-lovers.html">
+                        <span class="tree-icon">📄</span> Sons and Lovers
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/steppenwolf.html">
+                        <span class="tree-icon">📄</span> Steppenwolf
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/strange-stories-from-a-chinese-studio.html">
+                        <span class="tree-icon">📄</span> Strange Stories From A Chinese Studio
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/swallows-and-amazons.html">
+                        <span class="tree-icon">📄</span> Swallows and Amazons
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/swann-in-love.html">
+                        <span class="tree-icon">📄</span> Swann in Love
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/swanns-way.html">
+                        <span class="tree-icon">📄</span> Swann's Way
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-adventures-of-huckleberry-finn.html">
+                        <span class="tree-icon">📄</span> The Adventures of Huckleberry Finn
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-adventures-of-tom-sawyer.html">
+                        <span class="tree-icon">📄</span> The Adventures of Tom Sawyer
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-aeneid.html">
+                        <span class="tree-icon">📄</span> The Aeneid
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-arabian-nights.html">
+                        <span class="tree-icon">📄</span> The Arabian Nights
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-beast-in-the-jungle.html">
+                        <span class="tree-icon">📄</span> The Beast In The Jungle
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-bfg.html">
+                        <span class="tree-icon">📄</span> The BFG
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-borrowers.html">
+                        <span class="tree-icon">📄</span> The Borrowers
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-brothers-karamazov.html">
+                        <span class="tree-icon">📄</span> The Brothers Karamazov
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-call-of-the-wild.html">
+                        <span class="tree-icon">📄</span> The Call of the Wild
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-castle.html">
+                        <span class="tree-icon">📄</span> The Castle
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-count-of-monte-cristo.html">
+                        <span class="tree-icon">📄</span> The Count of Monte Cristo
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-crucible.html">
+                        <span class="tree-icon">📄</span> The Crucible
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-dharma-bums.html">
+                        <span class="tree-icon">📄</span> The Dharma Bums
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-divine-comedy.html">
+                        <span class="tree-icon">📄</span> The Divine Comedy
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-eagle-of-the-ninth.html">
+                        <span class="tree-icon">📄</span> The Eagle of the Ninth
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-epic-of-gilgamesh.html">
+                        <span class="tree-icon">📄</span> The Epic of Gilgamesh
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-flying-classroom.html">
+                        <span class="tree-icon">📄</span> The Flying Classroom
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-glass-menagerie.html">
+                        <span class="tree-icon">📄</span> The Glass Menagerie
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-golden-notebook.html">
+                        <span class="tree-icon">📄</span> The Golden Notebook
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-grapes-of-wrath.html">
+                        <span class="tree-icon">📄</span> The Grapes of Wrath
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-great-gatsby.html">
+                        <span class="tree-icon">📄</span> The Great Gatsby
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-handmaids-tale.html">
+                        <span class="tree-icon">📄</span> The Handmaid's Tale
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-idiot.html">
+                        <span class="tree-icon">📄</span> The Idiot
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-iliad-the-odyssey.html">
+                        <span class="tree-icon">📄</span> The Iliad & The Odyssey
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-jungle-book.html">
+                        <span class="tree-icon">📄</span> The Jungle Book
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-lady-who-loved-insects.html">
+                        <span class="tree-icon">📄</span> The Lady who Loved Insects
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-little-bookroom.html">
+                        <span class="tree-icon">📄</span> The Little Bookroom
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-little-humpbacked-horse.html">
+                        <span class="tree-icon">📄</span> The Little Humpbacked Horse
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-little-prince.html">
+                        <span class="tree-icon">📄</span> The Little Prince
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-little-white-horse.html">
+                        <span class="tree-icon">📄</span> The Little White Horse
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-man-without-qualities.html">
+                        <span class="tree-icon">📄</span> The Man Without Qualities
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-month-brothers.html">
+                        <span class="tree-icon">📄</span> The Month-Brothers
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-otterbury-incident.html">
+                        <span class="tree-icon">📄</span> The Otterbury Incident
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-pearl.html">
+                        <span class="tree-icon">📄</span> The Pearl
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-recognition-of-sakuntala.html">
+                        <span class="tree-icon">📄</span> The Recognition of Sakuntala
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-red-and-the-black.html">
+                        <span class="tree-icon">📄</span> The Red and the Black
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-restaurant-of-many-orders.html">
+                        <span class="tree-icon">📄</span> The Restaurant of Many Orders
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-scarlet-letter.html">
+                        <span class="tree-icon">📄</span> The Scarlet Letter
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-scholars.html">
+                        <span class="tree-icon">📄</span> The Scholars
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-secret-garden.html">
+                        <span class="tree-icon">📄</span> The Secret Garden
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-ship-that-flew.html">
+                        <span class="tree-icon">📄</span> The Ship That Flew
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-six-bullerby-children.html">
+                        <span class="tree-icon">📄</span> The Six Bullerby Children
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-sound-and-the-fury.html">
+                        <span class="tree-icon">📄</span> The Sound and the Fury
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-sound-of-the-mountain.html">
+                        <span class="tree-icon">📄</span> The Sound of the Mountain
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-strange-case-of-dr-jekyll-and-mr-hyde.html">
+                        <span class="tree-icon">📄</span> The Strange Case of Dr. Jekyll and Mr. Hyde
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-stranger.html">
+                        <span class="tree-icon">📄</span> The Stranger
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-sun-also-rises.html">
+                        <span class="tree-icon">📄</span> The Sun Also Rises
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-tale-of-genji.html">
+                        <span class="tree-icon">📄</span> The Tale of Genji
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-tempest.html">
+                        <span class="tree-icon">📄</span> The Tempest
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-time-machine.html">
+                        <span class="tree-icon">📄</span> The Time Machine
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-tin-drum.html">
+                        <span class="tree-icon">📄</span> The Tin Drum
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-trial.html">
+                        <span class="tree-icon">📄</span> The Trial
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-unbearable-lightness-of-being.html">
+                        <span class="tree-icon">📄</span> The Unbearable Lightness of Being
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-voyages-of-doctor-dolittle.html">
+                        <span class="tree-icon">📄</span> The Voyages of Doctor Dolittle
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-water-margin.html">
+                        <span class="tree-icon">📄</span> The Water Margin
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/the-witches.html">
+                        <span class="tree-icon">📄</span> The Witches
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/things-fall-apart.html">
+                        <span class="tree-icon">📄</span> Things Fall Apart
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/tistou-les-pouces-verts.html">
+                        <span class="tree-icon">📄</span> Tistou les pouces verts
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/titus-andronicus.html">
+                        <span class="tree-icon">📄</span> Titus Andronicus
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/to-kill-a-mockingbird.html">
+                        <span class="tree-icon">📄</span> To Kill a Mockingbird
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/to-the-lighthouse.html">
+                        <span class="tree-icon">📄</span> To the Lighthouse
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/tom-jones.html">
+                        <span class="tree-icon">📄</span> Tom Jones
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/treasure-island.html">
+                        <span class="tree-icon">📄</span> Treasure Island
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/tristram-shandy.html">
+                        <span class="tree-icon">📄</span> Tristram Shandy
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/tropic-of-cancer.html">
+                        <span class="tree-icon">📄</span> Tropic of Cancer
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/twelfth-night.html">
+                        <span class="tree-icon">📄</span> Twelfth Night
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/twenty-thousand-leagues-under-the-sea.html">
+                        <span class="tree-icon">📄</span> Twenty Thousand Leagues Under the Sea
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/uncle-toms-cabin.html">
+                        <span class="tree-icon">📄</span> Uncle Tom's Cabin
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/uncle-vanya.html">
+                        <span class="tree-icon">📄</span> Uncle Vanya
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/waiting-for-godot.html">
+                        <span class="tree-icon">📄</span> Waiting for Godot
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/war-and-peace.html">
+                        <span class="tree-icon">📄</span> War and Peace
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/watership-down.html">
+                        <span class="tree-icon">📄</span> Watership Down
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/where-the-wild-things-are.html">
+                        <span class="tree-icon">📄</span> Where the Wild Things Are
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/wuthering-heights.html">
+                        <span class="tree-icon">📄</span> Wuthering Heights
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/classic/zenos-conscience.html">
+                        <span class="tree-icon">📄</span> Zeno's Conscience
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/classics/index.html" class="folder-link">Classics</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/classics/a-court-of-silver-flames.html">
+                        <span class="tree-icon">📄</span> A Court of Silver Flames
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/counterculture/index.html" class="folder-link">Counterculture</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/counterculture/principia-discordia.html">
+                        <span class="tree-icon">📄</span> Principia Discordia
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/cyberpunk/index.html" class="folder-link">Cyberpunk</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/cyberpunk/a-scanner-darkly.html">
+                        <span class="tree-icon">📄</span> A Scanner Darkly
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/cyberpunk/burning-chrome.html">
+                        <span class="tree-icon">📄</span> Burning Chrome
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/cyberpunk/count-zero.html">
+                        <span class="tree-icon">📄</span> Count Zero
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/cyberpunk/cryptonomicon.html">
+                        <span class="tree-icon">📄</span> Cryptonomicon
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/cyberpunk/do-androids-dream-of-electric-sheep.html">
+                        <span class="tree-icon">📄</span> Do Androids Dream of Electric Sheep?
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/cyberpunk/islands-in-the-net.html">
+                        <span class="tree-icon">📄</span> Islands in the Net
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/cyberpunk/johnny-mnemonic.html">
+                        <span class="tree-icon">📄</span> Johnny Mnemonic
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/cyberpunk/lethal-interface.html">
+                        <span class="tree-icon">📄</span> Lethal Interface
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/cyberpunk/mona-lisa-overdrive.html">
+                        <span class="tree-icon">📄</span> Mona Lisa Overdrive
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/cyberpunk/neuromancer.html">
+                        <span class="tree-icon">📄</span> Neuromancer
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/cyberpunk/schismatrix-plus.html">
+                        <span class="tree-icon">📄</span> Schismatrix Plus
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/cyberpunk/snow-crash.html">
+                        <span class="tree-icon">📄</span> Snow Crash
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/cyberpunk/true-names.html">
+                        <span class="tree-icon">📄</span> True Names
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/cybersecurity/index.html" class="folder-link">Cybersecurity</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/cybersecurity/breaking-and-entering.html">
+                        <span class="tree-icon">📄</span> Breaking and Entering
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/cybersecurity/countdown-to-zero-day-stuxnet.html">
+                        <span class="tree-icon">📄</span> Countdown to Zero Day (Stuxnet)
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/cybersecurity/ghost-in-the-wires.html">
+                        <span class="tree-icon">📄</span> Ghost in the Wires
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/cybersecurity/hacking-the-art-of-exploitation.html">
+                        <span class="tree-icon">📄</span> Hacking: The Art of Exploitation
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/cybersecurity/hacking-the-human.html">
+                        <span class="tree-icon">📄</span> Hacking the Human
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/cybersecurity/liars-outliers.html">
+                        <span class="tree-icon">📄</span> Liars & Outliers
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/cybersecurity/sandworm.html">
+                        <span class="tree-icon">📄</span> Sandworm
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/cybersecurity/social-engineering-the-art-of-human-hacking.html">
+                        <span class="tree-icon">📄</span> Social Engineering: The Art of Human Hacking
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/cybersecurity/stealing-the-network-how-to-own-the-box.html">
+                        <span class="tree-icon">📄</span> Stealing the Network: How to Own the Box
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/cybersecurity/stealing-the-network-own-a-continent.html">
+                        <span class="tree-icon">📄</span> Stealing the Network: Own a Continent
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/cybersecurity/stealing-the-network-own-an-identity.html">
+                        <span class="tree-icon">📄</span> Stealing the Network: Own an Identity
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/cybersecurity/the-art-of-deception.html">
+                        <span class="tree-icon">📄</span> The Art of Deception
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/cybersecurity/the-art-of-intrusion.html">
+                        <span class="tree-icon">📄</span> The Art of Intrusion
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/cybersecurity/the-cuckoos-egg.html">
+                        <span class="tree-icon">📄</span> The Cuckoo's Egg
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/cybersecurity/the-shellcoders-handbook.html">
+                        <span class="tree-icon">📄</span> The Shellcoder's Handbook
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/economics/index.html" class="folder-link">Economics</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/economics/capital-in-the-21st-century.html">
+                        <span class="tree-icon">📄</span> Capital in the 21st Century
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/economics/chip-war.html">
+                        <span class="tree-icon">📄</span> Chip War
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/economics/general-theory-of-employment.html">
+                        <span class="tree-icon">📄</span> General Theory of Employment
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/economics/the-road-to-serfdom.html">
+                        <span class="tree-icon">📄</span> The Road to Serfdom
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/economics/wealth-of-nations.html">
+                        <span class="tree-icon">📄</span> Wealth of Nations
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/espionage/index.html" class="folder-link">Espionage</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/espionage/war-by-other-means.html">
+                        <span class="tree-icon">📄</span> War by Other Means
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/fantasy/index.html" class="folder-link">Fantasy</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/a-court-of-frost-and-starlight.html">
+                        <span class="tree-icon">📄</span> A Court of Frost and Starlight
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/a-court-of-mist-and-fury.html">
+                        <span class="tree-icon">📄</span> A Court of Mist and Fury
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/a-court-of-thorns-and-roses.html">
+                        <span class="tree-icon">📄</span> A Court of Thorns and Roses
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/a-court-of-wings-and-ruin.html">
+                        <span class="tree-icon">📄</span> A Court of Wings and Ruin
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/a-day-of-fallen-night.html">
+                        <span class="tree-icon">📄</span> A Day of Fallen Night
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/a-wizard-of-earthsea.html">
+                        <span class="tree-icon">📄</span> A Wizard of Earthsea
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/among-the-burning-flowers.html">
+                        <span class="tree-icon">📄</span> Among the Burning Flowers
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/crown-of-midnight.html">
+                        <span class="tree-icon">📄</span> Crown of Midnight
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/earwig-and-the-witch.html">
+                        <span class="tree-icon">📄</span> Earwig and the Witch
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/empire-of-storms.html">
+                        <span class="tree-icon">📄</span> Empire of Storms
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/heir-of-fire.html">
+                        <span class="tree-icon">📄</span> Heir of Fire
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/house-of-flame-and-shadow.html">
+                        <span class="tree-icon">📄</span> House of Flame and Shadow
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/house-of-sky-and-breath.html">
+                        <span class="tree-icon">📄</span> House of Sky and Breath
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/howls-moving-castle.html">
+                        <span class="tree-icon">📄</span> Howl's Moving Castle
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/kikis-delivery-service.html">
+                        <span class="tree-icon">📄</span> Kiki's Delivery Service
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/kingdom-of-ash.html">
+                        <span class="tree-icon">📄</span> Kingdom of Ash
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/kushiels-dart.html">
+                        <span class="tree-icon">📄</span> Kushiel's Dart
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/miraculous-stories-from-tradition.html">
+                        <span class="tree-icon">📄</span> Miraculous Stories from... Tradition
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/my-neighbor-totoro.html">
+                        <span class="tree-icon">📄</span> My Neighbor Totoro
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/oathbreakers.html">
+                        <span class="tree-icon">📄</span> Oathbreakers
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/priory-of-the-orange-tree.html">
+                        <span class="tree-icon">📄</span> Priory of the Orange Tree
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/queen-of-shadows.html">
+                        <span class="tree-icon">📄</span> Queen of Shadows
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/romancero-gitano.html">
+                        <span class="tree-icon">📄</span> Romancero Gitano
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/the-assassin-and-the-desert.html">
+                        <span class="tree-icon">📄</span> The Assassin and the Desert
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/the-assassin-and-the-empire.html">
+                        <span class="tree-icon">📄</span> The Assassin and the Empire
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/the-assassin-and-the-healer.html">
+                        <span class="tree-icon">📄</span> The Assassin and the Healer
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/the-assassin-and-the-pirate-lord.html">
+                        <span class="tree-icon">📄</span> The Assassin and the Pirate Lord
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/the-assassin-and-the-princess.html">
+                        <span class="tree-icon">📄</span> The Assassin and the Princess
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/the-assassin-and-the-underworld.html">
+                        <span class="tree-icon">📄</span> The Assassin and the Underworld
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/the-cruel-prince.html">
+                        <span class="tree-icon">📄</span> The Cruel Prince
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/the-hobbit.html">
+                        <span class="tree-icon">📄</span> The Hobbit
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/the-lion-the-witch-and-the-wardrobe.html">
+                        <span class="tree-icon">📄</span> The Lion the Witch and the Wardrobe
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/the-lord-of-the-rings.html">
+                        <span class="tree-icon">📄</span> The Lord of the Rings
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/the-princess-bride.html">
+                        <span class="tree-icon">📄</span> The Princess Bride
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/the-prisoners-throne.html">
+                        <span class="tree-icon">📄</span> The Prisoner's Throne
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/the-queen-of-nothing.html">
+                        <span class="tree-icon">📄</span> The Queen of Nothing
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/the-stolen-heir.html">
+                        <span class="tree-icon">📄</span> The Stolen Heir
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/the-wicked-king.html">
+                        <span class="tree-icon">📄</span> The Wicked King
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/throne-of-glass.html">
+                        <span class="tree-icon">📄</span> Throne of Glass
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/tower-of-dawn.html">
+                        <span class="tree-icon">📄</span> Tower of Dawn
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/tress-of-the-emerald-sea.html">
+                        <span class="tree-icon">📄</span> Tress of the Emerald Sea
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fantasy/when-marnie-was-there.html">
+                        <span class="tree-icon">📄</span> When Marnie Was There
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/fiction/index.html" class="folder-link">Fiction</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/fiction/a-norwegian-family.html">
+                        <span class="tree-icon">📄</span> A Norwegian Family
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fiction/a-thousand-splendid-suns.html">
+                        <span class="tree-icon">📄</span> A Thousand Splendid Suns
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fiction/american-psycho.html">
+                        <span class="tree-icon">📄</span> American Psycho
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fiction/bylo-nas-pet.html">
+                        <span class="tree-icon">📄</span> Bylo nas pet
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fiction/charnel-house.html">
+                        <span class="tree-icon">📄</span> Charnel House
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fiction/checkered-fences.html">
+                        <span class="tree-icon">📄</span> Checkered Fences
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fiction/christina-kartanon-varjoissa.html">
+                        <span class="tree-icon">📄</span> Christina - Kartanon varjoissa
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fiction/circle-in-the-sand.html">
+                        <span class="tree-icon">📄</span> Circle In the Sand
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fiction/dogs-of-orninica.html">
+                        <span class="tree-icon">📄</span> Dogs of Orninica
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fiction/fight-club.html">
+                        <span class="tree-icon">📄</span> Fight Club
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fiction/grave-of-the-fireflies.html">
+                        <span class="tree-icon">📄</span> Grave of the Fireflies
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fiction/les-princes-du-vent.html">
+                        <span class="tree-icon">📄</span> Les Princes du vent
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fiction/perfume-the-story-of-a-murderer.html">
+                        <span class="tree-icon">📄</span> Perfume: The Story of a Murderer
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fiction/the-albino-album.html">
+                        <span class="tree-icon">📄</span> The Albino Album
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fiction/the-fools-progress.html">
+                        <span class="tree-icon">📄</span> The Fool's Progress
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fiction/the-free.html">
+                        <span class="tree-icon">📄</span> The Free
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fiction/the-red-tent.html">
+                        <span class="tree-icon">📄</span> The Red Tent
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fiction/the-satanic-verses.html">
+                        <span class="tree-icon">📄</span> The Satanic Verses
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fiction/trainspotting.html">
+                        <span class="tree-icon">📄</span> Trainspotting
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fiction/what-the-neighbors-did.html">
+                        <span class="tree-icon">📄</span> What the Neighbors Did
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/fiction/yellowface.html">
+                        <span class="tree-icon">📄</span> Yellowface
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/finance/index.html" class="folder-link">Finance</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/finance/the-intelligent-investor.html">
+                        <span class="tree-icon">📄</span> The Intelligent Investor
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/general-fiction/index.html" class="folder-link">General Fiction</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/general-fiction/his-last-bow.html">
+                        <span class="tree-icon">📄</span> His Last Bow
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/general-fiction/the-adventures-of-sherlock-holmes.html">
+                        <span class="tree-icon">📄</span> The Adventures of Sherlock Holmes
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/general-fiction/the-memoirs-of-sherlock-holmes.html">
+                        <span class="tree-icon">📄</span> The Memoirs of Sherlock Holmes
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/general-fiction/the-return-of-sherlock-holmes.html">
+                        <span class="tree-icon">📄</span> The Return of Sherlock Holmes
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/general-fiction/the-valley-of-fear.html">
+                        <span class="tree-icon">📄</span> The Valley of Fear
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/geopolitics/index.html" class="folder-link">Geopolitics</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/geopolitics/war-by-other-means.html">
+                        <span class="tree-icon">📄</span> War by Other Means
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/graphic-novel/index.html" class="folder-link">Graphic Novel</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/graphic-novel/maus-a-survivors-tale.html">
+                        <span class="tree-icon">📄</span> Maus: A Survivor's Tale
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/graphic-novel/maus-i-ii.html">
+                        <span class="tree-icon">📄</span> Maus I & II
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/graphic-novel/persepolis.html">
+                        <span class="tree-icon">📄</span> Persepolis
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/graphic-novel/v-for-vendetta.html">
+                        <span class="tree-icon">📄</span> V for Vendetta
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/health/index.html" class="folder-link">Health</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/health/rebuilding-milo.html">
+                        <span class="tree-icon">📄</span> Rebuilding Milo
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details open>
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/history/index.html" class="folder-link">History</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/history/1491.html">
+                        <span class="tree-icon">📄</span> 1491
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/history/a-century-of-spies.html">
+                        <span class="tree-icon">📄</span> A Century of Spies
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/history/a-peoples-history-of-the-united-states.html">
+                        <span class="tree-icon">📄</span> A People's History of the United States
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/history/a-peoples-history-of-the-world.html">
+                        <span class="tree-icon">📄</span> A People's History of the World
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/history/at-home.html">
+                        <span class="tree-icon">📄</span> At Home
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/history/bombs-beards-and-barricades.html">
+                        <span class="tree-icon">📄</span> Bombs Beards and Barricades
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/history/bury-my-heart-at-wounded-knee.html">
+                        <span class="tree-icon">📄</span> Bury My Heart at Wounded Knee
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/history/che-guevara-and-the-fbi.html">
+                        <span class="tree-icon">📄</span> Che Guevara and the FBI
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/history/common-sense.html">
+                        <span class="tree-icon">📄</span> Common Sense
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/history/guns-germs-and-steel.html">
+                        <span class="tree-icon">📄</span> Guns Germs and Steel
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/history/herodotus-thucydides.html">
+                        <span class="tree-icon">📄</span> Herodotus | Thucydides
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/history/homo-deus.html">
+                        <span class="tree-icon">📄</span> Homo Deus
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/history/lies-my-teacher-told-me.html">
+                        <span class="tree-icon">📄</span> Lies My Teacher Told Me
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/history/nexus-a-brief-history.html">
+                        <span class="tree-icon">📄</span> Nexus: A Brief History
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/history/sapiens.html">
+                        <span class="tree-icon">📄</span> Sapiens
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/history/the-autumn-of-the-middle-ages.html">
+                        <span class="tree-icon">📄</span> The Autumn of the Middle Ages
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/hobby/index.html" class="folder-link">Hobby</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/hobby/puzzlecraft.html">
+                        <span class="tree-icon">📄</span> Puzzlecraft
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/intel/index.html" class="folder-link">Intel</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/intel/counterintelligence-theory-and-practice.html">
+                        <span class="tree-icon">📄</span> Counterintelligence: Theory and Practice
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/intel/inside-cias-private-world.html">
+                        <span class="tree-icon">📄</span> Inside CIA's Private World
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/intel/the-puzzle-palace.html">
+                        <span class="tree-icon">📄</span> The Puzzle Palace
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/lit-crit/index.html" class="folder-link">Lit Crit</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/lit-crit/anatomy-of-a-short-story.html">
+                        <span class="tree-icon">📄</span> Anatomy of a Short Story
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/lit-crit/marxism-and-literature.html">
+                        <span class="tree-icon">📄</span> Marxism and Literature
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/literature/index.html" class="folder-link">Literature</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/literature/2666.html">
+                        <span class="tree-icon">📄</span> 2666
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/literature/a-void.html">
+                        <span class="tree-icon">📄</span> A Void
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/literature/blindness.html">
+                        <span class="tree-icon">📄</span> Blindness
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/literature/distant-star.html">
+                        <span class="tree-icon">📄</span> Distant Star
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/literature/ficciones.html">
+                        <span class="tree-icon">📄</span> Ficciones
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/literature/gravitys-rainbow.html">
+                        <span class="tree-icon">📄</span> Gravity's Rainbow
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/literature/heart-of-a-dog.html">
+                        <span class="tree-icon">📄</span> Heart of a Dog
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/literature/pedro-pramo.html">
+                        <span class="tree-icon">📄</span> Pedro Páramo
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/literature/the-book-of-disquiet.html">
+                        <span class="tree-icon">📄</span> The Book of Disquiet
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/literature/the-master-and-margarita.html">
+                        <span class="tree-icon">📄</span> The Master and Margarita
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/literature/the-rings-of-saturn.html">
+                        <span class="tree-icon">📄</span> The Rings of Saturn
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/manga/index.html" class="folder-link">Manga</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/manga/baron-the-cat-returns.html">
+                        <span class="tree-icon">📄</span> Baron: The Cat Returns
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/manga/kokurikozaka-kara.html">
+                        <span class="tree-icon">📄</span> Kokurikozaka Kara
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/manga/nausica-of-the-valley-of-the-wind-manga.html">
+                        <span class="tree-icon">📄</span> Nausicaä of the Valley of the Wind (Manga)
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/manga/spirited-away-film-comic.html">
+                        <span class="tree-icon">📄</span> Spirited Away Film Comic
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/manga/the-cat-returns.html">
+                        <span class="tree-icon">📄</span> The Cat Returns
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/manga/whisper-of-the-heart.html">
+                        <span class="tree-icon">📄</span> Whisper of the Heart
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/math/index.html" class="folder-link">Math</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/math/alexs-adventures-in-numberland.html">
+                        <span class="tree-icon">📄</span> Alex's Adventures in Numberland
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/math/introduction-to-linear-algebra.html">
+                        <span class="tree-icon">📄</span> Introduction to Linear Algebra
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/math/math-for-computer-science.html">
+                        <span class="tree-icon">📄</span> Math for Computer Science
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/math/the-grapes-of-math.html">
+                        <span class="tree-icon">📄</span> The Grapes of Math
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/memoir/index.html" class="folder-link">Memoir</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/memoir/flashbacks.html">
+                        <span class="tree-icon">📄</span> Flashbacks
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/memoir/i-know-why-the-caged-bird-sings.html">
+                        <span class="tree-icon">📄</span> I Know Why the Caged Bird Sings
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/memoir/testament-of-youth.html">
+                        <span class="tree-icon">📄</span> Testament of Youth
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/mystery/index.html" class="folder-link">Mystery</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/mystery/a-study-in-scarlet.html">
+                        <span class="tree-icon">📄</span> A Study in Scarlet
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/mystery/and-then-there-were-none.html">
+                        <span class="tree-icon">📄</span> And Then There Were None
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/mystery/complete-sherlock-holmes.html">
+                        <span class="tree-icon">📄</span> Complete Sherlock Holmes
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/mystery/double-indemnity.html">
+                        <span class="tree-icon">📄</span> Double Indemnity
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/mystery/murder-on-the-orient-express.html">
+                        <span class="tree-icon">📄</span> Murder on the Orient Express
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/mystery/the-big-sleep.html">
+                        <span class="tree-icon">📄</span> The Big Sleep
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/mystery/the-hound-of-the-baskervilles.html">
+                        <span class="tree-icon">📄</span> The Hound of the Baskervilles
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/mystery/the-long-goodbye.html">
+                        <span class="tree-icon">📄</span> The Long Goodbye
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/mystery/the-maltese-falcon.html">
+                        <span class="tree-icon">📄</span> The Maltese Falcon
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/mystery/the-postman-always-rings-twice.html">
+                        <span class="tree-icon">📄</span> The Postman Always Rings Twice
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/mystery/the-sign-of-four.html">
+                        <span class="tree-icon">📄</span> The Sign of Four
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/mythology/index.html" class="folder-link">Mythology</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/mythology/hero-with-a-thousand-faces.html">
+                        <span class="tree-icon">📄</span> Hero with a Thousand Faces
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/mythology/the-captain-and-the-prince.html">
+                        <span class="tree-icon">📄</span> The Captain and the Prince
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/new-journalism/index.html" class="folder-link">New Journalism</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/new-journalism/electric-kool-aid-acid-test.html">
+                        <span class="tree-icon">📄</span> Electric Kool-Aid Acid Test
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/new-journalism/fear-and-loathing-in-las-vegas.html">
+                        <span class="tree-icon">📄</span> Fear and Loathing in Las Vegas
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/new-journalism/hells-angels.html">
+                        <span class="tree-icon">📄</span> Hell's Angels
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/philosophy/index.html" class="folder-link">Philosophy</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/a-thousand-plateaus.html">
+                        <span class="tree-icon">📄</span> A Thousand Plateaus
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/anti-oedipus.html">
+                        <span class="tree-icon">📄</span> Anti-Oedipus
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/antifragile.html">
+                        <span class="tree-icon">📄</span> Antifragile
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/aristotle-i.html">
+                        <span class="tree-icon">📄</span> Aristotle I
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/aristotle-ii.html">
+                        <span class="tree-icon">📄</span> Aristotle II
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/beyond-good-and-evil.html">
+                        <span class="tree-icon">📄</span> Beyond Good and Evil
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/confessions.html">
+                        <span class="tree-icon">📄</span> Confessions
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/discipline-and-punish.html">
+                        <span class="tree-icon">📄</span> Discipline and Punish
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/discourse-on-inequality.html">
+                        <span class="tree-icon">📄</span> Discourse on Inequality
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/ethics.html">
+                        <span class="tree-icon">📄</span> Ethics
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/freedom-from-the-known.html">
+                        <span class="tree-icon">📄</span> Freedom from the Known
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/i-am-that.html">
+                        <span class="tree-icon">📄</span> I Am That
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/ishmael.html">
+                        <span class="tree-icon">📄</span> Ishmael
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/logic-organon.html">
+                        <span class="tree-icon">📄</span> Logic / Organon
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/meditations.html">
+                        <span class="tree-icon">📄</span> Meditations
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/myth-of-sisyphus.html">
+                        <span class="tree-icon">📄</span> Myth of Sisyphus
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/nausea.html">
+                        <span class="tree-icon">📄</span> Nausea
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/on-practice-and-contradiction.html">
+                        <span class="tree-icon">📄</span> On Practice and Contradiction
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/penses.html">
+                        <span class="tree-icon">📄</span> Pensées
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/powers-of-horror.html">
+                        <span class="tree-icon">📄</span> Powers of Horror
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/principles-of-philosophy.html">
+                        <span class="tree-icon">📄</span> Principles of Philosophy
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/simulacra-and-simulation.html">
+                        <span class="tree-icon">📄</span> Simulacra and Simulation
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/society-of-the-spectacle.html">
+                        <span class="tree-icon">📄</span> Society of the Spectacle
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/tao-te-ching.html">
+                        <span class="tree-icon">📄</span> Tao Te Ching
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/the-central-philosophy-of-buddhism.html">
+                        <span class="tree-icon">📄</span> The Central Philosophy of Buddhism
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/the-complete-essays.html">
+                        <span class="tree-icon">📄</span> The Complete Essays
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/the-concept-of-mind.html">
+                        <span class="tree-icon">📄</span> The Concept of Mind
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/the-conquest-of-happiness.html">
+                        <span class="tree-icon">📄</span> The Conquest of Happiness
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/the-doors-of-perception.html">
+                        <span class="tree-icon">📄</span> The Doors of Perception
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/the-economic-and-philosophic-manuscripts.html">
+                        <span class="tree-icon">📄</span> The Economic and Philosophic Manuscripts
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/the-fall.html">
+                        <span class="tree-icon">📄</span> The Fall
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/the-great-conversation.html">
+                        <span class="tree-icon">📄</span> The Great Conversation
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/the-principles-of-morals-and-legislation.html">
+                        <span class="tree-icon">📄</span> The Principles of Morals and Legislation
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/the-republic.html">
+                        <span class="tree-icon">📄</span> The Republic
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/toward-a-philosophy-of-history.html">
+                        <span class="tree-icon">📄</span> Toward a Philosophy of History
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/trial-and-death-of-socrates.html">
+                        <span class="tree-icon">📄</span> Trial and Death of Socrates
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/utopia.html">
+                        <span class="tree-icon">📄</span> Utopia
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/philosophy/zen-and-the-art-of-motorcycle-maintenance.html">
+                        <span class="tree-icon">📄</span> Zen and the Art of Motorcycle Maintenance
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/poetry/index.html" class="folder-link">Poetry</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/poetry/a-coney-island-of-the-mind.html">
+                        <span class="tree-icon">📄</span> A Coney Island of the Mind
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/poetry/a-season-in-hell.html">
+                        <span class="tree-icon">📄</span> A Season in Hell
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/poetry/acosf-azriel-bonus-chapter.html">
+                        <span class="tree-icon">📄</span> ACOSF - Azriel Bonus Chapter
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/poetry/ariel.html">
+                        <span class="tree-icon">📄</span> Ariel
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/poetry/howl-and-other-poems.html">
+                        <span class="tree-icon">📄</span> Howl and Other Poems
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/poetry/leaves-of-grass.html">
+                        <span class="tree-icon">📄</span> Leaves of Grass
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/poetry/masnavi-manavi.html">
+                        <span class="tree-icon">📄</span> Masnavi-Ma'navi
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/poetry/paris-spleen.html">
+                        <span class="tree-icon">📄</span> Paris Spleen
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/poetry/poems-of-paul-celan.html">
+                        <span class="tree-icon">📄</span> Poems of Paul Celan
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/poetry/the-flowers-of-evil.html">
+                        <span class="tree-icon">📄</span> The Flowers of Evil
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/poetry/the-orchard-bostan.html">
+                        <span class="tree-icon">📄</span> The Orchard (Bostan)
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/poetry/the-raven.html">
+                        <span class="tree-icon">📄</span> The Raven
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/poetry/the-waste-land.html">
+                        <span class="tree-icon">📄</span> The Waste Land
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/political/index.html" class="folder-link">Political</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/political/dispatches-for-the-ny-tribune.html">
+                        <span class="tree-icon">📄</span> Dispatches for the NY Tribune
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/political/manufacturing-consent.html">
+                        <span class="tree-icon">📄</span> Manufacturing Consent
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/political/maoists-in-india.html">
+                        <span class="tree-icon">📄</span> Maoists in India
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/political/on-tyranny.html">
+                        <span class="tree-icon">📄</span> On Tyranny
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/political/philippine-society-and-revolution.html">
+                        <span class="tree-icon">📄</span> Philippine Society and Revolution
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/political/revolution-sabotaged-before-it-began.html">
+                        <span class="tree-icon">📄</span> Revolution Sabotaged Before it Began
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/political/settlers.html">
+                        <span class="tree-icon">📄</span> Settlers
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/political/shock-doctrine.html">
+                        <span class="tree-icon">📄</span> Shock Doctrine
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/political/the-18th-brumaire-of-louis-bonaparte.html">
+                        <span class="tree-icon">📄</span> The 18th Brumaire of Louis Bonaparte
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/political/the-civil-war-in-france.html">
+                        <span class="tree-icon">📄</span> The Civil War in France
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/political/the-wretched-of-the-earth.html">
+                        <span class="tree-icon">📄</span> The Wretched of the Earth
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/political/untouchable-god.html">
+                        <span class="tree-icon">📄</span> Untouchable God
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/political-economy/index.html" class="folder-link">Political Economy</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/political-economy/capital-vol-1.html">
+                        <span class="tree-icon">📄</span> Capital Vol. 1
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/political-economy/capital-vol-2-3.html">
+                        <span class="tree-icon">📄</span> Capital Vol 2 & 3
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/political-economy/communist-manifesto.html">
+                        <span class="tree-icon">📄</span> Communist Manifesto
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/political-economy/condition-of-working-class-in-england.html">
+                        <span class="tree-icon">📄</span> Condition of Working Class in England
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/political-economy/imperialism-the-highest-stage-of-capitalism.html">
+                        <span class="tree-icon">📄</span> Imperialism: The Highest Stage of Capitalism
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/political-economy/poverty-of-philosophy.html">
+                        <span class="tree-icon">📄</span> Poverty of Philosophy
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/political-economy/the-acquisitive-society.html">
+                        <span class="tree-icon">📄</span> The Acquisitive Society
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/political-philosophy/index.html" class="folder-link">Political Philosophy</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/political-philosophy/the-german-ideology.html">
+                        <span class="tree-icon">📄</span> The German Ideology
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/political-theory/index.html" class="folder-link">Political Theory</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/political-theory/foundations-of-leninism.html">
+                        <span class="tree-icon">📄</span> Foundations of Leninism
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/political-theory/left-wing-communism.html">
+                        <span class="tree-icon">📄</span> Left-Wing Communism
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/political-theory/leviathan.html">
+                        <span class="tree-icon">📄</span> Leviathan
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/political-theory/marxism-leninism-maoism-study-notes.html">
+                        <span class="tree-icon">📄</span> Marxism Leninism Maoism Study Notes
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/political-theory/minimanual-of-the-urban-guerrilla.html">
+                        <span class="tree-icon">📄</span> Minimanual of the Urban Guerrilla
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/political-theory/origins-of-totalitarianism.html">
+                        <span class="tree-icon">📄</span> Origins of Totalitarianism
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/political-theory/quotations-from-chairman-mao.html">
+                        <span class="tree-icon">📄</span> Quotations from Chairman Mao
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/political-theory/seeing-like-a-state.html">
+                        <span class="tree-icon">📄</span> Seeing Like a State
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/political-theory/state-and-revolution.html">
+                        <span class="tree-icon">📄</span> State and Revolution
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/political-theory/what-is-to-be-done.html">
+                        <span class="tree-icon">📄</span> What Is to Be Done?
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/psychology/index.html" class="folder-link">Psychology</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/psychology/civilization-and-its-discontents.html">
+                        <span class="tree-icon">📄</span> Civilization and Its Discontents
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/psychology/interpretation-of-dreams.html">
+                        <span class="tree-icon">📄</span> Interpretation of Dreams
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/psychology/the-gift-of-fear.html">
+                        <span class="tree-icon">📄</span> The Gift of Fear
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/psychology/thinking-fast-and-slow.html">
+                        <span class="tree-icon">📄</span> Thinking Fast and Slow
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/psychology/thinking.html">
+                        <span class="tree-icon">📄</span> Thinking
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/reference/index.html" class="folder-link">Reference</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/reference/syntopicon-of-great-books-vol-ii.html">
+                        <span class="tree-icon">📄</span> Syntopicon of Great Books (Vol II)
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/religion/index.html" class="folder-link">Religion</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/religion/god-is-not-great.html">
+                        <span class="tree-icon">📄</span> God Is Not Great
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/religion/the-book-of-job.html">
+                        <span class="tree-icon">📄</span> The Book of Job
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/religion/the-holy-bible-kjv.html">
+                        <span class="tree-icon">📄</span> The Holy Bible: KJV
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/satire/index.html" class="folder-link">Satire</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/satire/the-devils-dictionary.html">
+                        <span class="tree-icon">📄</span> The Devil's Dictionary
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/sci-fi/index.html" class="folder-link">Sci-Fi</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/all-the-worlds-a-simulation.html">
+                        <span class="tree-icon">📄</span> All the World's a Simulation
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/blindsight.html">
+                        <span class="tree-icon">📄</span> Blindsight
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/born-in-salt.html">
+                        <span class="tree-icon">📄</span> Born in Salt
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/colossus-and-the-crab.html">
+                        <span class="tree-icon">📄</span> Colossus and the Crab
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/colossus.html">
+                        <span class="tree-icon">📄</span> Colossus
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/dark-forest.html">
+                        <span class="tree-icon">📄</span> Dark Forest
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/deaths-end.html">
+                        <span class="tree-icon">📄</span> Death's End
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/dune.html">
+                        <span class="tree-icon">📄</span> Dune
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/ecotopia.html">
+                        <span class="tree-icon">📄</span> Ecotopia
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/enders-game.html">
+                        <span class="tree-icon">📄</span> Ender's Game
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/exhalation.html">
+                        <span class="tree-icon">📄</span> Exhalation
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/harmony.html">
+                        <span class="tree-icon">📄</span> Harmony
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/hyperion.html">
+                        <span class="tree-icon">📄</span> Hyperion
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/life-boat-mutiny.html">
+                        <span class="tree-icon">📄</span> Life Boat Mutiny
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/metro-2033.html">
+                        <span class="tree-icon">📄</span> Metro 2033
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/mockingbird.html">
+                        <span class="tree-icon">📄</span> Mockingbird
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/oryx-and-crake.html">
+                        <span class="tree-icon">📄</span> Oryx and Crake
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/parable-of-the-sower.html">
+                        <span class="tree-icon">📄</span> Parable of the Sower
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/roadside-picnic.html">
+                        <span class="tree-icon">📄</span> Roadside Picnic
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/robochildren.html">
+                        <span class="tree-icon">📄</span> RoboChildren
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/sleep-state-interrupt.html">
+                        <span class="tree-icon">📄</span> Sleep State Interrupt
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/solaris.html">
+                        <span class="tree-icon">📄</span> Solaris
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/surface-tension.html">
+                        <span class="tree-icon">📄</span> Surface Tension
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/the-council.html">
+                        <span class="tree-icon">📄</span> The Council
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/the-dispossessed.html">
+                        <span class="tree-icon">📄</span> The Dispossessed
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/the-fall-of-colossus.html">
+                        <span class="tree-icon">📄</span> The Fall of Colossus
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/the-left-hand-of-darkness.html">
+                        <span class="tree-icon">📄</span> The Left Hand of Darkness
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/the-story.html">
+                        <span class="tree-icon">📄</span> The Story
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/the-three-body-problem.html">
+                        <span class="tree-icon">📄</span> The Three-Body Problem
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/the-valis-trilogy.html">
+                        <span class="tree-icon">📄</span> The Valis Trilogy
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/the-war-for-reality.html">
+                        <span class="tree-icon">📄</span> The War for Reality
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/the-wrath-of-leviathan.html">
+                        <span class="tree-icon">📄</span> The Wrath of Leviathan
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/we.html">
+                        <span class="tree-icon">📄</span> We
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sci-fi/zero-day-rising.html">
+                        <span class="tree-icon">📄</span> Zero-Day Rising
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/science/index.html" class="folder-link">Science</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/science/a-more-perfect-heaven.html">
+                        <span class="tree-icon">📄</span> A More Perfect Heaven
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/science/a-short-history-of-nearly-everything.html">
+                        <span class="tree-icon">📄</span> A Short History of Nearly Everything
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/science/a-universe-from-nothing.html">
+                        <span class="tree-icon">📄</span> A Universe from Nothing
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/science/heaven-on-earth.html">
+                        <span class="tree-icon">📄</span> Heaven on Earth
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/science/hippocrates-galen.html">
+                        <span class="tree-icon">📄</span> Hippocrates | Galen
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/science/on-the-revolutions-of-heavenly-spheres.html">
+                        <span class="tree-icon">📄</span> On the Revolutions of Heavenly Spheres
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/science/quantum-mechanics-the-theoretical-minimum.html">
+                        <span class="tree-icon">📄</span> Quantum Mechanics: The Theoretical Minimum
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/science/scale.html">
+                        <span class="tree-icon">📄</span> Scale
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/science/six-easy-pieces.html">
+                        <span class="tree-icon">📄</span> Six Easy Pieces
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/science/souvenirs-entomologiques.html">
+                        <span class="tree-icon">📄</span> Souvenirs entomologiques
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/science/the-body.html">
+                        <span class="tree-icon">📄</span> The Body
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/science/the-book-nobody-read.html">
+                        <span class="tree-icon">📄</span> The Book Nobody Read
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/science/the-copernicus-complex.html">
+                        <span class="tree-icon">📄</span> The Copernicus Complex
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/science/the-dragons-of-eden.html">
+                        <span class="tree-icon">📄</span> The Dragons of Eden
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/science/the-nature-of-life.html">
+                        <span class="tree-icon">📄</span> The Nature of Life
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/science/the-origin-of-species.html">
+                        <span class="tree-icon">📄</span> The Origin of Species
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/science/the-selfish-gene.html">
+                        <span class="tree-icon">📄</span> The Selfish Gene
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/science/works-of-hippocrates.html">
+                        <span class="tree-icon">📄</span> Works of Hippocrates
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/self-edu/index.html" class="folder-link">Self-Edu</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/self-edu/how-to-read-a-book.html">
+                        <span class="tree-icon">📄</span> How to Read a Book
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/self-edu/secrets-of-a-buccaneer-scholar.html">
+                        <span class="tree-icon">📄</span> Secrets of a Buccaneer-Scholar
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/self-edu/the-teenage-liberation-handbook.html">
+                        <span class="tree-icon">📄</span> The Teenage Liberation Handbook
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/self-help/index.html" class="folder-link">Self-Help</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/self-help/how-to-win-friends-influence-people.html">
+                        <span class="tree-icon">📄</span> How to Win Friends & Influence People
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/short-story/index.html" class="folder-link">Short Story</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/short-story/the-most-dangerous-game.html">
+                        <span class="tree-icon">📄</span> The Most Dangerous Game
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/short-story/the-prussian-officer.html">
+                        <span class="tree-icon">📄</span> The Prussian Officer
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/sociology/index.html" class="folder-link">Sociology</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/sociology/economy-and-society.html">
+                        <span class="tree-icon">📄</span> Economy and Society
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sociology/from-max-weber-essays-in-sociology.html">
+                        <span class="tree-icon">📄</span> From Max Weber: Essays in Sociology
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sociology/sick-societies.html">
+                        <span class="tree-icon">📄</span> Sick Societies
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sociology/the-theory-of-the-leisure-class.html">
+                        <span class="tree-icon">📄</span> The Theory of the Leisure Class
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/sociology/violence-a-new-approach.html">
+                        <span class="tree-icon">📄</span> Violence: A New Approach
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/steampunk/index.html" class="folder-link">Steampunk</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/steampunk/the-difference-engine.html">
+                        <span class="tree-icon">📄</span> The Difference Engine
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/strategy/index.html" class="folder-link">Strategy</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/strategy/art-of-war.html">
+                        <span class="tree-icon">📄</span> Art of War
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/strategy/book-of-five-rings.html">
+                        <span class="tree-icon">📄</span> Book of Five Rings
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/strategy/the-prince.html">
+                        <span class="tree-icon">📄</span> The Prince
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/tech/index.html" class="folder-link">Tech</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/tech/algorithm-design-manual.html">
+                        <span class="tree-icon">📄</span> Algorithm Design Manual
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/tech/computer-systems-a-programmers-perspective.html">
+                        <span class="tree-icon">📄</span> Computer Systems: A Programmer's Perspective
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/tech/crafting-interpreters.html">
+                        <span class="tree-icon">📄</span> Crafting Interpreters
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/tech/designing-data-intensive-applications.html">
+                        <span class="tree-icon">📄</span> Designing Data-Intensive Applications
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/tech/operating-systems-ostep.html">
+                        <span class="tree-icon">📄</span> Operating Systems (OSTEP)
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/tech/operating-systems-three-easy-pieces.html">
+                        <span class="tree-icon">📄</span> Operating Systems: Three Easy Pieces
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/tech/readings-in-database-systems.html">
+                        <span class="tree-icon">📄</span> Readings in Database Systems
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/tech/structure-and-interpretation-of-computer-programs.html">
+                        <span class="tree-icon">📄</span> Structure and Interpretation of Computer Programs
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/tech/the-dream-machine.html">
+                        <span class="tree-icon">📄</span> The Dream Machine
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/tradecraft/index.html" class="folder-link">Tradecraft</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/tradecraft/advanced-lock-picking-secrets.html">
+                        <span class="tree-icon">📄</span> Advanced Lock Picking Secrets
+                    </a>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../books/tradecraft/complete-guide-to-lock-picking.html">
+                        <span class="tree-icon">📄</span> Complete Guide to Lock Picking
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/travel/index.html" class="folder-link">Travel</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/travel/a-walk-in-the-woods.html">
+                        <span class="tree-icon">📄</span> A Walk in the Woods
+                    </a>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../books/true-crime/index.html" class="folder-link">True Crime</a>
+                        </summary>
+                        <ul class="tree-list">
+                <li class="tree-item file">
+                    <a href="../../books/true-crime/in-cold-blood.html">
+                        <span class="tree-icon">📄</span> In Cold Blood
+                    </a>
+                </li></ul>
+                    </details>
+                </li></ul>
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../clothes/index.html" class="folder-link">Clothes</a>
+                        </summary>
+                        
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../movies/index.html" class="folder-link">Movies & TV</a>
+                        </summary>
+                        
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../recipes/index.html" class="folder-link">Recipes</a>
+                        </summary>
+                        
+                    </details>
+                </li>
+                <li class="tree-item folder">
+                    <details >
+                        <summary>
+                            <span class="tree-icon">📁</span> 
+                            <a href="../../stories/index.html" class="folder-link">Stories</a>
+                        </summary>
+                        
+                    </details>
+                </li>
+                <li class="tree-item file">
+                    <a href="../../about.html">
+                        <span class="tree-icon">📄</span> Welcome to EggByte
+                    </a>
+                </li></ul>
+        </div>
+    </div>
+</aside>
+    </div>
+
+    <footer class="main-footer" style="padding:0; border:none; height:0; overflow:hidden;">
+    <!-- Neko moved to Sidebar -->
+    <script src="../../js/search_data.js"></script>
+    <script src="../../js/main.js"></script>
+</footer>
+</body>
+
+</html>
