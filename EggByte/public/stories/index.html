@@ -27,7 +27,28 @@
     <div class="app-layout">
         <aside class="sidebar-left">
     <div class="site-branding">
-        <!-- Neko Cats (Moved below) -->
+        <!-- Neko Cats (Restored to Top) -->
+        <div class="neko-roost" style="position:absolute; top:10px; left:20px; z-index:9999; pointer-events:none;">
+            <script>
+                // Prevent default single-cat auto-start
+                window.NekoNoDefault = true;
+            </script>
+            <script src="https://webneko.net/n20171213.js"></script>
+            <script>
+                window.addEventListener('load', function () {
+                    try {
+                        // Positioned relative to screen/sidebar top-left
+                        // Back to top (Y=25)
+                        new Neko(40, 25, false, "silversky");
+                        new Neko(90, 25, false, "lucy");
+                        new Neko(140, 25, false, "socks");
+                    } catch (e) {
+                        console.warn("Neko spawn failed:", e);
+                    }
+                });
+            </script>
+        </div>
+
         <div class="brand-row">
             <a href="../index.html" class="logo-link">
                 <!-- Brought closer to top (margin-top: 10px) -->
@@ -51,35 +72,13 @@
         </ul>
     </nav>
 
-    <!-- Neko Cats (Moved to middle) -->
-    <div class="neko-roost" style="position:absolute; top:0; left:20px; z-index:9999; pointer-events:none;">
-        <script>
-            // Prevent default single-cat auto-start
-            window.NekoNoDefault = true;
-        </script>
-        <script src="https://webneko.net/n20171213.js"></script>
-        <script>
-            window.addEventListener('load', function () {
-                try {
-                    // Positioned relative to screen/sidebar top-left
-                    // Y=380 to sit between Nav and Footer
-                    new Neko(40, 380, false, "silversky");
-                    new Neko(90, 380, false, "lucy");
-                    new Neko(140, 380, false, "socks");
-                } catch (e) {
-                    console.warn("Neko spawn failed:", e);
-                }
-            });
-        </script>
-    </div>
-
     <div class="sidebar-footer">
         <button id="theme-toggle" aria-label="Toggle Theme" title="Toggle Theme">
             <span class="icon">☀</span>
         </button>
 
         <!-- Neko Widget (maybe change image here later via JS, but same script works) -->
-        <!-- Neko Cats moved to middle -->
+        <!-- Neko Cats moved -->
     </div>
 </aside>
 
